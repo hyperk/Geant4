@@ -1,0 +1,164 @@
+$Id: History,v 1.39 2010-11-30 14:51:57 allison Exp $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                      Category History file
+                      ---------------------
+This file should be used by G4 developers and category coordinators
+to briefly summarize all major modifications introduced in the code
+and keep track of all category-tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+
+30.11.2010    J.Allison, tag medical_linac-V09-03-11
+             - vis.mac: Bug fix:
+               o /vis/viewer/set/autoRefresh true/false were inverted.
+
+30.11.2010    J.Allison, tag medical_linac-V09-03-10
+             - Introduced G4UIExecutive.
+
+29.11.2010    C.Andenna, B.Caccia, G.A.P.Cirrone, tag medical_linac-V09-03-09
+	     - Warings removal
+	     - Corrected and updated the vis.mac file
+	     - Minor revisions
+
+29.11.2010    C.Andenna, B.Caccia, G.A.P.Cirrone, tag medical_linac-V09-03-08
+	     - Added a 'results' folder to store simulation outputs
+	     - Minor revisions
+
+29.11.2010   G.A.P.Cirrone, tag medical_linac-V09-03-07
+	     - Completed the DICOM files transfer
+
+29.11.2010   G.A.P.Cirrone, tag medical_linac-V09-03-06
+	     - Updating directories
+
+25.11.2010   C.Andenna, B.Caccia, G.A.P.Cirrone, tag medical_linac-V09-03-05
+	     - Fixed a memory leak
+
+25.11.2010   C.Andenna, B.Caccia, G.A.P.Cirrone, tag medical_linac-V09-03-04
+	     - Eliminated the local environmental variables (ML2FILEIN, ML2FILEOUT)
+	     - Added a phantom based on dicom CT images (taken from the extended example DICOM)
+	     - Added the capability to rotate the accelerator (around the X axis and around the Y axis of a fix 90 deg angle)
+	     - Added the capability to translate the phantom
+	     - Modified the format of the output files
+
+25.11.2010   C. Andenna, B.Caccia, G.A.P.Cirrone, tag medical_linac-V09-03-03
+	     - Created launches folder
+
+25.11.2010   G.A.P.Cirrone, tag medical_linac-V09-03-02
+	     - removed no more useful files and folders
+
+17.11.2010   J.Allison tag medical_linac-V09-03-01
+	     - ml2.cc: Introduced G4UIExecutive.
+	     - ML2Ph_BoxInBoxMessenger.cc: Uncommented SetNewValue in order to
+	     resolve external reference.
+
+03.06.2010   J.Perl tag medical_linac-V09-03-00
+	     Update vis usage		     
+
+19.11.2009   C. Andenna, B. Caccia, G.A.P.Cirrone tag medical_linac-V09-02-05
+	     History corrected, changed the local environmental variables name		     
+
+18.11.2009   C. Andenna, B. Caccia, G.A.P.Cirrone tag medical_linac-V09-02-04
+	     updated of the include and src files, written the README_MedLinac2.txt.
+
+17.11.2009   C. Andenna, B. Caccia, G.A.P.Cirrone tag medical_linac-V09-02-03
+	     first realise of the new version of the medical linac
+
+18.09.2009   G.A.P.Cirrone, tag medical_linac-V09-02-02
+           - Corrected a crash in the MedLinacHead.cc file class.
+           - Update of the physics models: deleted the old and not
+             more supported Lowenergy electromagnetic models and
+             added the possibility to activate the physics lists and the
+             Reference physics lists (or packages) directly
+             via macro command;
+           - Added the possibility to set cuts and max allowed step lenghts
+             via macro commands
+
+15.09.2009   G.A.P.Cirrone, tag medical_linac-V09-02-01
+             GNUmakefile corrected
+
+06.04.2009   G.A.P.Cirrone, tag medical_linac-V09-02-00
+             GNUmakefile updated
+
+06.07.2007   Michela Piergentili, tag medical_linac-V08-03-02
+             bug 880 fixed in Detector Construction
+ 
+01.07.2007   Michela Piergentili, tag medical_linac-V08-03-01
+	     macro updated
+
+01.07.2007   Michela Piergentili, tag medical_linac-V08-03-00
+	     removed MedLinacVisManager, set initial seed to 0
+	     The example compiles with CLHEP 2.0.3.1
+	     use of MultipleScattering instead of MultipleScattering52
+
+08.12.2005   Michela Piergentili , tag medical_linac-V07-01-05
+	     updated macro for visualization
+ 
+07.12.2005   Susanna Guatelli, tag medical_linac-V07-01-04
+             The example compiles with CLHEP 2.0.2.2
+
+25.11.2005   Michela Piergentili , tag medical_linac-V07-01-03
+	     update README file, added new methods to messengers
+	     for the selection of the detector features
+
+25.11.2005   Michela Piergentili , tag medical_linac-V07-01-02
+	     code maitenance
+
+24.11.2005   Michela Piergentili , tag medical_linac-V07-01-01
+             code maitenance
+
+24.11.2005   Michela Piergentili , tag medical_linac-V07-01-00
+             code maitenance
+
+13.07.2005   Michela Piergentili, tag medical_linac-V07-00-06
+             macro added
+
+04.07.2005   Michela Piergentili, tag medical_linac-V07-00-05
+             code with DIANE, added histograms
+
+04.07.2005   Michela Piergentili, tag medical_linac-V07-00-04
+             code with DIANE
+
+02.06.2005   Michela Piergentili, tag medical_linac-V07-00-03
+	     code maintenance
+
+02.06.2005   Michela Piergentili, tag medical_linac-V07-00-02
+	     Bug fixed in ROGeometry
+
+3rd May 2005  John Allison  (examples-V07-00-03)
+- Replaced vis manager with G4VisExecutive.
+
+25.11.2004   Michela Piergentili, tag medical_linac-V06-02-00
+	     Maintenance of the code.
+
+24.11.2004   Michela Piergentili, tag medical_linac-V07-00-01
+	     Added MedLinacTrackingAction, MedLinacMLCDecorator 
+	     and MedLinacMLCMessenger.
+
+24.11.2004   Michela Piergentili, tag medical_linac-V07-00-00
+	     Migration to <cmath>
+
+21.05.2004   Michela Piergentili, tag medical_linac-V06-01-03
+	     modified documentation
+
+21.05.2004   Michela Piergentili, tag medical_linac-V06-01-02
+	     added README
+
+14.05.2004   Michela Piergentili, tag medical_linac-V06-01-01
+	     decorator design iteration implemented, bug fixed in 
+	     MedLinacPhantomSD, cut per region introduced for the
+	     first collimator
+
+02.04.2004   Michela Piergentili, tag medical_linac-V06-01-00
+	     geometry completed, bug fixed in DetectorConstruction
+
+18.03.2004   Michela Piergentili, tag medical_linac-V06-00-00
+             First created
+

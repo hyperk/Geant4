@@ -1,0 +1,114 @@
+-------------------------------------------------------------------
+$Id: History,v 1.35 2010-11-29 10:56:53 cirrone Exp $
+-------------------------------------------------------------------
+
+     =========================================================
+ 		      Geant4 - Brachytherapy example
+     =========================================================
+
+                      Category History file
+                      ---------------------
+
+29.11.2010 -  G.A.P. Cirron; tag brachy-V09-03-05
+   	      Compilation warnigs removed
+
+26.11.2010 -  G.A.P. Cirrone & S. Guatelli; tag brachy-V09-03-04
+   	      General code review 
+
+25.11.2010 -- J.Allison; tag brachy-V09-03-03
+              Cleaned up use of G4UIExecutive.
+
+24.11.2010 -- G.A.P.Cirrone; tag brachy-V09-03-02
+   	      Fixed compilation error for a missing obsolete include file
+
+03.06.2010 -- Joseph Perl; tag brachy-V09-03-01
+   	      Updated vis usage 
+
+01.06.2010 -- G.A.P. Cirrone; tag brachy-V09-03-00
+              G4UIExecutiveand minor revisions
+
+12.11.2009 -- L. Pandola; tag brachy-V09-02-02
+       	      Fixed AIDA 
+
+12.11.2009 -- S. Guatelli; brachy-V09-02-01
+   	      Update of Physics List
+
+22.02 2009 -- G.Folger;  tag brachy-V09-02-00
+     	      Correct compilation  errors and warnings when G4ANALYSIS is NOT set
+
+24.11.2008 -- G.A.P.Cirrone; tag: brachy-V09-01-03
+              Updated macro files
+
+21.11.2008 -- G.A.P.Cirrone; Tag: brachy-V09-01-02
+              Corrected and updated macro files
+
+15.06.2008 -- G.A.P.Cirrone; Tag: brachy-V09-01-01
+              Removed no more necessary AIDA commands from GNUmakefile
+
+05th June 2008: G.A.P.Cirrone (cirrone@lns.infn.it). Tag version: brachy-V09-01-00
+- Compilation error corrected in the BrachyAnalysiManager
+- Bad type assignment in BrachyAnalysismanager
+- Activated the generation .root files for output 
+
+15th November 2006 Susanna Guatelli (brachy-V08-01-01)
+- Physics list cleaned. The cut is fixed to a value lower than the 
+  1 keV limit. 
+
+14th November 2006  John Allison  (brachy-V08-01-00)
+- Removed /vis/scene/transientsAction none (no longer available).
+
+30th May 2006 Susanna Guatelli (brachy-V08-00-02)
+- Deleted a warning during compilation
+
+15th May 2006 Susanna Guatelli (brachy-V08-00-01)
+- Added comments, deleted a warning during compilation
+
+15th May 2006 Susanna Guatelli (brachy-V08-00-00)
+- Hit collection deleted. The energy deposit and position are stored directly
+  in histograms and ntuples in the BrachyPhantomSD
+- Iteration in the management of the primary particles
+- More comments explain the code 
+- README updated
+
+22th November 2005 Susanna Guatelli (brachy-V07-01-00)
+- Deleted bug in the RunAction. The results of the simulation 
+  (energy deposit, position) are stored in a hit collection.
+
+30th May 2005  Susanna Guatelli  (brachy-V07-00-01)
+- README updated; analysis with AIDA 3.2.1 and PI 1.3.3.
+
+3rd May 2005  John Allison  (examples-V07-00-03)
+- Replaced vis manager with G4VisExecutive.
+
+3.12.2004 -  Susanna Guatelli
+             Simulation seed changed
+
+24.11.2004 - Susanna Guatelli
+             Analysis management improved. 
+
+13.5.2004 - Susanna Guatelli
+            Migration to AIDA 3.2.1 and PI 1.2.1
+
+11.3.2004  - Susanna Guatelli
+             Add a histogram, maintenance of the code
+
+12.11.2003 - John Allison
+             Updated Vis Manager.
+
+20.10.2003 - Vladimir Ivanchenko, tag brachy-V05-02-00
+             Migration to cut per region
+
+06.12.2002 - Gabriele Cosmo, tag brachy-V04-01-04
+             Migration to new G4ApplicationState.
+
+09.11.2000 - SA, tag brachy-V02-00-00
+             (dvnote) First submission of Brachytherapy advanced example.
+
+15.11.2000 - SA, tag brachy-V02-00-01
+             (minrev) Data fully compliant to Geant4 types.
+             (newfea) LowEnergy option available (see BRACHY_OPT_USELOWENERGY in BrachyPhysicsList.cc).
+
+10.12.2000 - Stephane Chauvie
+             (minrev) DOS -> Unix text conversion.
+             (newfea) Added Low Energy Electromagnetic physics. Removed switch to standard.
+

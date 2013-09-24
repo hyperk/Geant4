@@ -1,0 +1,95 @@
+$Id: History,v 1.25 2010-11-09 14:50:21 allison Exp $
+-------------------------------------------------------------------
+
+     =========================================================
+                      Geant4 - Ultra Advanced example
+     =========================================================
+
+                           History file
+                           ------------
+
+17.01.2011 - G.A.P.Cirrone (air_shower-V09-03-02)
+	     Solved compilation error related to the new CLHEP version
+
+09.11.2010 - J.Allison (air_shower-V09-03-01)
+             Inroduced G4UIExecutive.
+
+02.06.2010 - J.Perl (air_shower-V09-03-00)
+             Updated vis usage
+
+16.11.2009 -- B. Tomé,
+              Tag air_shower-V09-02-06
+              Changed UltraPhysicsList.cc to use new processes G4eMultipleScattering, G4MuMultipleScattering
+              and G4hMultipleScattering 
+              Tested example air_shower with Geant4 tag geant4-09-02-ref-10
+
+15.05.2009 -- B. Tomé, 
+              Updated README file. Tag air_shower-V09-01-00
+              Tested example with Geant4 tag geant4-09-02-ref-04 and iAIDA-1.0.14
+
+10.12.2008 -- G.A.P.Cirrone, Tag: air_shower-V09-01-05
+              Updated README file;
+03.07.2008 -- B. Tomé;  Tag air_shower-V09-01-04
+              Access to private data members of UltraDetectorConstruction through Get functions.
+
+03.07.2008 -- B. Tomé;  Tag air_shower-V09-01-03
+              Adjusted range of optical properties tables in UltraDetectorConstruction;
+              Added check of optical photon energy in UltraPrimaryGeneratorAction;
+              Cerenkov process attached to all applicable particles;
+              Modified Visualisation.mac and UltraMacro.mac files
+              
+26.06.2008 -- G.A.P.Cirrone; Tag air_shower-V09-01-02
+              Corrected a parameter in the UltraDetectorConstruction to remove a segmentation
+	      due to a non correct definition of the refraction index of the Quartz.
+
+15.06.2008 -- G.A.P.Cirrone; Tag: air_shower-V09-01-01
+              Removed no more necessary AIDA commands from GNUmakefile
+
+11.06.2008 -- G.A.P.Cirrone air_shower-V09-01-00
+              Solved a compilation error in the Analysis Manager 
+
+30.09.2007 -- P.Gumplinger - air_shower-V09-00-00
+           -- adjust to the G4Cerenkov process now being a G4VDiscreteProcess
+
+16.11.2006 -- B. Tome  - air_shower-V08-01-00
+           -- Tested with candidate tag geant4-08-02-cand-00.
+           -- Ultra.cc - Removed invocation of Visualisation.mac if argc==1.
+
+02.06.2006 -- B. Tome - air_shower-V08-00-01
+           -- UltraRunAction.cc : Removed use of visualization UI commands.
+           -- Small changes in UltraPrimaryGeneratorAction.cc
+   
+17.05.2006 -- B. Tome - air_shower-V08-00-00
+           -- Small fix correction
+
+7.12.2005 -- S. Guatelli - air_shower-V07-01-02
+          -- Compile with CLHEP 2.0.2.2
+
+6.12.2005 -- S. Guatelli - air_shower-V07-01-01
+          -- Warning deleted
+
+15.11.2005 -- G.Cosmo - air_shower-V07-01-00
+           -- Migration to <sstream> from deprecated <strstream>.
+
+06.06.2005 -- B.Tome - air_shower-V07-00-01
+           -- README updated; analysis with AIDA 3.2.1 and PI 1.3.3.
+
+06.06.2005 -- G.Cosmo - air_shower-V07-00-00
+           -- Corrected usage of <strstream> in RunActionMessenger.
+           -- Corrected call to Visualisation.mac from Ultra.cc.
+           -- Changed viewer to OGLSX in Visualisation.mac.
+
+03.05.2005 -- J.Allison
+           -- Replaced vis manager with G4VisExecutive.
+
+10.12.2004 -- air_shower-V06-02-02
+           -- Replaced usage of M_PI with CLHEP's pi.
+
+24.11.2004 -- air_shower-V06-02-01
+           -- Migration to the new tree-structured command format for G4GeneralParticleSource:
+              - new UI commands implemented
+              - changed access to public methods of G4GeneralParticleSource in 
+                UltraPrimaryGenerationAction; methods of G4SPSxxxDistribution are now used. 
+           -- Migration to <cmath>
+
+20.05.2004 -- Example committed

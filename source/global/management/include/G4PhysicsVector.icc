@@ -1,0 +1,209 @@
+//
+// ********************************************************************
+// * License and Disclaimer                                           *
+// *                                                                  *
+// * The  Geant4 software  is  copyright of the Copyright Holders  of *
+// * the Geant4 Collaboration.  It is provided  under  the terms  and *
+// * conditions of the Geant4 Software License,  included in the file *
+// * LICENSE and available at  http://cern.ch/geant4/license .  These *
+// * include a list of copyright holders.                             *
+// *                                                                  *
+// * Neither the authors of this software system, nor their employing *
+// * institutes,nor the agencies providing financial support for this *
+// * work  make  any representation or  warranty, express or implied, *
+// * regarding  this  software system or assume any liability for its *
+// * use.  Please see the license in the file  LICENSE  and URL above *
+// * for the full disclaimer and the limitation of liability.         *
+// *                                                                  *
+// * This  code  implementation is the result of  the  scientific and *
+// * technical work of the GEANT4 collaboration.                      *
+// * By using,  copying,  modifying or  distributing the software (or *
+// * any work based  on the software)  you  agree  to acknowledge its *
+// * use  in  resulting  scientific  publications,  and indicate your *
+// * acceptance of all terms of the Geant4 Software license.          *
+// ********************************************************************
+//
+//
+// $Id: G4PhysicsVector.icc,v 1.30 2010-09-20 16:22:56 gcosmo Exp $
+// GEANT4 tag $Name: not supported by cvs2svn $
+//
+// 
+//---------------------------------------------------------------
+//      GEANT 4 class source file
+//
+//  G4PhysicsVector.icc
+//
+//  Description:
+//    A physics vector which has values of energy-loss, cross-section, 
+//    and other physics values of a particle in matter in a given 
+//    range of the energy, momentum, etc.
+//    This class serves as the base class for a vector having various 
+//    energy scale, for example like 'log', 'linear', 'free', etc.
+//
+//---------------------------------------------------------------
+
+inline
+ G4double G4PhysicsVector::GetLastEnergy() const
+{
+  return cache->lastEnergy;	
+}
+
+inline
+ G4double G4PhysicsVector::GetLastValue() const
+{
+   return cache->lastValue;
+}
+
+inline 
+ size_t G4PhysicsVector::GetLastBin() const
+{
+   return cache->lastBin;
+}
+ 
+inline
+ G4double G4PhysicsVector::operator[](const size_t binNumber) const
+{
+  return  dataVector[binNumber];
+}
+
+//---------------------------------------------------------------
+
+inline
+ G4double G4PhysicsVector::operator()(const size_t binNumber) const
+{
+  return dataVector[binNumber];
+}
+
+//---------------------------------------------------------------
+
+inline
+ G4double G4PhysicsVector::Energy(const size_t binNumber) const
+{
+  return binVector[binNumber];
+}
+
+//---------------------------------------------------------------
+
+inline 
+ size_t G4PhysicsVector::GetVectorLength() const
+{
+  return numberOfNodes;
+}
+
+//---------------------------------------------------------------
+
+inline
+ G4double G4PhysicsVector::GetValue(G4double theEnergy, G4bool&) 
+{
+  return Value(theEnergy);
+}
+
+//------------------------------------------------
+
+inline
+ G4double G4PhysicsVector::LinearInterpolation(G4int lastBin)
+{
+  // Linear interpolation is used to get the value. If the give energy
+  // is in the highest bin, no interpolation will be Done. Because 
+  // there is an extra bin hidden from a user at locBin=numberOfBin, 
+  // the following interpolation is valid even the current locBin=
+  // numberOfBin-1. 
+
+  G4double intplFactor = (cache->lastEnergy-binVector[lastBin]) 
+     / (binVector[lastBin + 1]-binVector[lastBin]); // Interpol. factor
+
+  return dataVector[lastBin] +
+         ( dataVector[lastBin + 1]-dataVector[lastBin] ) * intplFactor;
+}
+
+//---------------------------------------------------------------
+
+inline
+ G4double G4PhysicsVector::SplineInterpolation(G4int lastBin)
+{
+  // Spline interpolation is used to get the value. If the give energy
+  // is in the highest bin, no interpolation will be Done. Because 
+  // there is an extra bin hidden from a user at locBin=numberOfBin, 
+  // the following interpolation is valid even the current locBin=
+  // numberOfBin-1. 
+
+  if(0 == secDerivative.size() ) { FillSecondDerivatives(); }
+
+  // check bin value
+  G4double x1 = binVector[lastBin];
+  G4double x2 = binVector[lastBin + 1];
+  G4double delta = x2 - x1;
+
+  G4double a = (x2 - cache->lastEnergy)/delta;
+  G4double b = (cache->lastEnergy - x1)/delta;
+   
+  // Final evaluation of cubic spline polynomial for return   
+  G4double y1 = dataVector[lastBin];
+  G4double y2 = dataVector[lastBin + 1];
+
+  G4double res = a*y1 + b*y2 + 
+        ( (a*a*a - a)*secDerivative[lastBin] +
+          (b*b*b - b)*secDerivative[lastBin + 1] )*delta*delta/6.0;
+
+  return res;
+}
+
+//---------------------------------------------------------------
+
+inline 
+ void G4PhysicsVector::Interpolation(G4int lastBin)
+{
+  if(useSpline) { cache->lastValue = SplineInterpolation(lastBin); }
+  else          { cache->lastValue = LinearInterpolation(lastBin); }
+}
+
+//---------------------------------------------------------------
+
+inline 
+ void G4PhysicsVector::PutValue(size_t binNumber, G4double theValue)
+{
+  dataVector[binNumber] = theValue;
+}
+
+//---------------------------------------------------------------
+
+inline 
+ G4bool G4PhysicsVector::IsFilledVectorExist() const
+{
+  G4bool status=false;
+
+  if(numberOfNodes > 0) { status=true; }
+  return status;
+}
+
+//---------------------------------------------------------------
+
+inline 
+ void G4PhysicsVector::PutComment(const G4String& theComment)
+{
+  comment = theComment;
+}
+
+//---------------------------------------------------------------
+
+inline 
+ const G4String& G4PhysicsVector::GetComment() const
+{
+  return comment;
+}
+
+//---------------------------------------------------------------
+
+inline 
+ G4PhysicsVectorType G4PhysicsVector::GetType() const
+{
+  return type;
+}
+
+//---------------------------------------------------------------
+
+inline 
+ void G4PhysicsVector::SetSpline(G4bool val)
+{
+  useSpline = val;
+}

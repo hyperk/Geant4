@@ -1,0 +1,96 @@
+$Id: History,v 1.16 2010-11-11 00:49:25 akimura Exp $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                      Category History file
+                      ---------------------
+This file should be used by G4 developers and category coordinators
+to briefly summarize all major modifications introduced in the code
+and keep track of all category-tags.
+It DOES NOT substitute the  CVS log-message one should put at every
+committal in the CVS repository !
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+History file for visualization/gMocren sub-category
+---------------------------------------------------
+
+11 November 2010  Akinori Kimura (gMocren-V09-03-05)
+- Replaced G4cerr with G4cout and added the following line before G4cout.
+  if (G4VisManager::GetVerbosity() >= G4VisManager::errors)
+
+3rd September 2010  John Allison  (gMocren-V09-03-04)
+- Added missing inclusion of <sstream> header in G4GMocrenFileSceneHandler.cc.
+
+1st May 2010  John Allison  (gMocren-V09-03-03)
+- G4GMocrenFileSceneHandler.cc: Removed dependency on G4VisManager.
+
+30th May 2010  John Allison  (gMocren-V09-03-02)
+- G4GMocrenFileSceneHandler: Added AddCompound(const G4VDigi&).
+  o Simply invokes G4VSceneHandler::AddCompound(const G4VDigi&) for now.
+
+11 May 2010  John Allison  (gMocren-V09-03-01)
+- G4GMocrenFileSceneHandler.cc: Added G4cout << G4endl; to improve printing.
+
+22 January 2010  Gabriele Cosmo (gMocren-V09-03-00)
+Fix in G4GMocrenFileSceneHandler.cc to allow for porting on C++0x Standard:
+made explicit with static_cast conversions from double to float. Also use
+G4 types in consistent way.
+
+3 December 2009  Akinori Kimura
+Line 363 of G4GMocrenFileSceneHandler.cc was deleted.
+It was a debug code with G4cout.
+Another file I/O bug was fixed. The following files were committed.
+G4GMocrenFileViewer.cc
+G4GMocrenFileSceneHandler.cc
+G4GMocrenIO.{cc,hh}
+
+5 November 2009  Gabriele Cosmo (gMocren-V09-02-03)
+Fix in G4GMocrenFileSceneHandler.cc for resolving compilation error on
+Windows
+
+5 November 2009  Akinori Kimura
+GMocrenFileSceneHandler::AddCompound(G4THisMap<>) was modified
+to deal with /vis/scene/add/psHits <scorer_name>.
+GMocrenIO.cc was modified to remove an unnecessary output by std::cout.
+
+2 November 2009  Akinori Kimura (gMocren-V09-02-02)
+I mistook to make a tag, gMocren-V09-02-01.
+So I made a tag again.
+
+
+2 November 2009  Akinori Kimura (gMocren-V09-02-01)
+Deleted the following two AddEndOfEventModel(*) in
+G4GMocrenFileSceneHandler::GFBeginModeling().
+These models are entrusted to user commands /vis/scene/add/psHits or hits
+
+   scene->AddEndOfEventModel(new G4PSHitsModel()); 
+   scene->AddEndOfEventModel(new G4HitsModel());
+
+
+1 November 2009  Akinori Kimura
+A few warning as following were fixed.
+src/G4GMocrenFileSceneHandler.cc:1812: warning: dereferencing pointer '<anonymous>' does break strict-aliasing rules
+
+
+22 October 2009  Akinori Kimura (gMocren-V09-02-00)
+G4PSHitsModel.{hh,cc} were moved to the modeling directory.
+Made a tag of the gMocren file driver.
+
+18 October 2009  Akinori Kimura
+Fixed bugs which are to create an extra file and to be not able to
+deal with multiple runs.
+
+12 October 2009  Akinori Kimura
+Large modification to support G4PhantomParameterisation,
+G4VNestedParameterisation, primitive scorer and interactive primitive
+scorer
+
+1 April 2009  Akinori Kimura
+The prototype gMocren-file driver is added.
+Tagged vis-V09-02-06.

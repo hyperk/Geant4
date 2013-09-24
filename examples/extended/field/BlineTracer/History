@@ -1,0 +1,28 @@
+$Id: History,v 1.3 2005-05-03 10:05:49 allison Exp $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                    BlineTracer History file
+                    ------------------------
+This file should be used by the G4 example coordinator to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+3rd May 2005  John Allison  (examples-V07-00-03)
+- Replaced vis manager with G4VisExecutive.
+
+Jun 6th, 2004 - L.Desorgher (BlineTracer-V06-01-00)
+---------------------------
+- Added inclusion of G4ChordFinder.hh in G4BlineTracer.cc.
+
+Nov 25th, 2003 - G.Cosmo  (BlineTracer-V05-02-00)
+------------------------
+- Created from original sources, courtesy of L.Desorgher.
+

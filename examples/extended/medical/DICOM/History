@@ -1,0 +1,125 @@
+$Id: History,v 1.31 2010-12-23 11:34:22 chauvie Exp $
+-------------------------------------------------------------------
+
+     =========================================================
+ 		      Geant4 - DICOM example
+     =========================================================
+
+                      Category History file
+
+                      ---------------------
+
+05.06.2011 - Pedro Arce (DICOM-V09-03-10, DICOM-V09-03-11)
+             Corrected name for sensitive detector to be consistently
+             named as "phantomSD" in DicomRunAction. Addressing problem
+             report #1210.
+             Corrected axis slicing hint in nested-parameterisation.
+
+23.12.2010 - Stephane Chauvie 
+             Corrected 2 bugs in DicomHandler
+
+30.11.2010 - John Allison
+             dicom.cc: Removed redundant headers:
+             "G4UIterminal.hh" and "G4UItcsh.hh".             
+
+30.11.2010 - Ivana Hrivnacova (DICOM-V09-03-09)
+             Moved inclusion of vis headers as last in main().
+
+26.11.2010 - Pedro Arce (DICOM-V09-03-08)
+	     Correction of warnings
+
+24.11.2010 - Pedro Arce (DICOM-V09-03-07)
+	     Introduced partial phantom example
+	     Delete G4PSDoseDeposit_RegNav and use G4ScoreSplittingProcess instead
+     
+11.11.2010 - Gabriele Cosmo (DICOM-V09-03-06)
+             Corrected vis.mac macro and set OGL as default viewer.
+             Corrected some printouts in code...
+
+09.11.2010 - Gabriele Cosmo (DICOM-V09-03-05)
+             Fixed compilation warning on virtual methods hiding
+             Fixed compilation warnings in DicomPhantomParameterisationColour
+             and DicomHandler.
+
+02.11.2010 - John Allison (DICOM-V09-03-04)
+             Introduced G4UIExecutive.
+
+06.06.2010 - Joseph Perl (DICOM-V09-03-03)
+	     Remove unused variable in EventAction 
+
+03.06.2010 - Joseph Perl (DICOM-V09-03-02)
+	     Updated vis usage
+
+19.11.2009 - Stéphane Chauvie (DICOM-V09-03-00)
+01.06.2010 - Stephane Chauvie - Andrea Armando 
+	     Added function to read nested items (defined and undefined)
+	     Removed dependencies on CONQUEST
+	     DICOM handler could now read whichever DICOM file
+             (PT,CT,DR,CR,US,MR... ) 
+	    
+19.11.2009 - Stephanee Chauvie (DICOM-V09-02-03)
+	     Changed DICOM Handler to read CT files coming from CONQUEST
+             DICOM server
+
+05.02.2009 - Pedro Arce (DICOM-V09-02-01)
+             Added report on dose per voxel.
+             Added warning for erroneous inclusion of development code in
+             release 9.2 (to be removed when fix will be included in patch).
+
+27.01.2009 - Gabriele Cosmo (DICOM-V09-02-00)
+             Use new class G4RegularNavigationHistory for counting of step
+             lengths in voxels of the regular structure.
+
+27.11.2008 - Pedro Arce (DICOM-V09-01-02)
+             Included G4PSDoseDeposit_RegNav to distribute dose along voxels, 
+	     including msc and energy loss corrections, for the case of 
+	     skipping voxel with equal materials when using regular
+	     navigation
+
+21.07.2008 - Pedro Arce (DICOM-V09-01-01)
+             Bug fix in DicomNestedPhantomParameterisation in calculating the
+             'copyNo', so that material assignment was wrong
+             Set default cut to 1 mm (with previous 1.E-3 mm too much time is
+             spent on physics and no improvement is seen with different
+             navigation options).
+             Corrected direction and position of primary particles so that
+             they traverse the DICOM voxels.
+
+22.01.2008 - Pedro Arce (DICOM-V09-01-00)
+             Do not use 'rindex' in DicomHandler class to avoid problems
+             on Windows.
+
+06.12.2007 - Pedro Arce
+             Added voxel colouring by material. Added possibility to use nested parameterisation
+
+05.12.2007 - Pedro Arce
+             Deep review on the input files and the way how the geometry is built.
+             Use of G4PhantomParameterisation and G4RegularNavigation.
+
+06.12.2005 - Gabriele Cosmo
+             Trivial changes for support of CLHEP-2.0.X series.
+
+29.11.2005 - Susanna Guatelli (DICOM-V07-01-00)
+             Documentation update
+
+12.06.2005 - Stephane Chauvie (DICOM-V07-00-01)
+             Added improvement by Akinori Kimura.
+
+03.05.2005 - John Allison
+             Replaced vis manager with G4VisExecutive.
+
+10.12.2004 - Maria Grazia Pia (DICOM-V06-02-02)
+             Update README to announce further improvements and fixes
+             by Akinori Kimura.
+
+3.12.2004 - Gabriele Cosmo (DICOM-V06-02-01)
+            Implemented migration to <cmath>.
+
+13.5.2004 - Susanna Guatelli
+            updated compiler: gcc3.2.3
+
+11.3.2003 - Susanna Guatelli
+            README changed
+
+6.2003 - Susanna Guatelli
+         First public release of the example

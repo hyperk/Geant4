@@ -1,0 +1,14 @@
+#
+# (can be run in batch, without graphic)
+#
+/process/verbose  0
+/tracking/verbose 0
+/run/verbose      2
+/event/verbose    0
+# 
+# muon 300 MeV to the direction (1.,0.,0.)
+#
+/gun/particle mu+
+/gun/energy 300 MeV
+/run/beamOn 200
+

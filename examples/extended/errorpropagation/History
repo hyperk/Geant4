@@ -1,0 +1,26 @@
+$Id: History,v 1.5 2009-03-16 09:51:59 gcosmo Exp $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                      Category History file
+                      ---------------------
+This file should be used by G4 developers and category coordinators
+to briefly summarize all major modifications introduced in the code
+and keep track of all category-tags.
+It DOES NOT substitute the  CVS log-message one should put at every
+committal in the CVS repository !
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+Mar 6, 2009  G.Barrand (exerrprop-V09-02-00)
+- GNUmakefile: removed logic for setting AIDA with G4ANALYSIS_USE.
+  since it already handled in the internal configuration scripts.
+- Replaced usare of 'uint' with 'size_t' in errprop.cc (G.Cosmo).
+
+May 28, 2007  P.Arce
+- First version
