@@ -1,5 +1,0 @@
-/control/verbose 1
-
-/cexmc/run/skipInteractionsWithoutEDT true
-
-/cexmc/run/replay
