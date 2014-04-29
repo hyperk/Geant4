@@ -1,0 +1,78 @@
+-------------------------------------------------------------------
+$Id: History,v 1.21 2010-11-16 17:54:39 allison Exp $
+-------------------------------------------------------------------
+
+     =========================================================
+                  Geant4 - ATLAS lAr calorimeter
+     =========================================================
+
+                      Category History file
+                      ---------------------
+
+17.01.2011   G.A.P.Cirrone (lAr_calorimeter-V09-03-02)
+	     Fixed compilation errors and physics models updated
+
+16.11.2010   John Allison (lAr_calorimeter-V09-03-01)
+             Introduced G4UIExecutive.
+
+04.06.2010   Joseph Perl (lAr_calorimeter-V09-03-00)
+             Updated vis usage
+
+12.11.2009 - A.Ribon (lAr_calorimeter-V09-02-01)
+             Fixed mistake in GNUmakefile, and use QGSP_BIC_EMY
+	     as default Physics List (so that it tests the
+	     low-energy electromagnetic).
+
+06.04.2009 - G.A.P.Cirrone (lAr_calorimeter-V09-02-00)
+	     GNUmakefile updated
+
+12.06.2008 - G.A.P.Cirrone (lAr_calorimeter-V09-01-00)
+             Fixed a compilation error in the Analysis manager
+
+14.11.2006 - A.Ribon (lAr_calorimeter-V08-01-01)
+             Removed hadronic_lists.gmk after the inclusion of
+             Physics Lists in the Geant4 kernel.
+
+21.07.2006 - A.Ribon (lAr_calorimeter-V08-01-00)
+             New hadronic_lists.gmk, consistent with composite_calorimeter.
+	     Fixed some uninitialization problems.
+
+08.12.2005 - A.Ribon (lAr_calorimeter-V07-01-00)
+             Migration to CLHEP namespace. 
+	     Removed also old header files.
+
+3rd May 2005  John Allison  (examples-V07-00-03)
+- Replaced vis manager with G4VisExecutive.
+
+13.12.04 - G.Cosmo (lAr_calorimeter-V06-02-02)
+           Use new phys-lists structure.
+
+29.11.04 - A.Ribon (lAr_calorimeter-V06-02-01)
+           Migration to cmath.
+
+14.07.04 - G.Cosmo (lAr_calorimeter-V06-02-00)
+           Corrected hadronic_lists.gmk, removed unnecessary addition
+           of kernel libraries to EXTRALIBS.
+
+28.05.04 - A.Ribon (lAr_calorimeter-V06-01-01)
+           Now PI light is used.
+
+18.05.04 - A.Ribon (lAr_calorimeter-V06-01-00)
+           Ported to PI. Only the setup is changed, no changes in the code.
+
+28.01.2004 - A.Ribon (lAr_calorimeter-V06-00-01)
+             Clean up. Fixes for g++ 3.2 . New Physics Lists.
+
+02.12.2003 - G.Cosmo (lAr_calorimeter-V05-02-01)
+             Fixed compilation errors if histograms disabled.
+             Fixed compilation warnings ...
+
+12.11.2003 - J.Allison
+             Updated Vis Manager.
+
+26.05.2003 - P.M.Lorenzo
+             Updated for release 5.1.
+
+30.09.2002 - A.Howard
+             Created. First version.
+

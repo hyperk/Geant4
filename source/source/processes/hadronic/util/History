@@ -1,0 +1,177 @@
+-------------------------------------------------------------------
+
+     ==========================================================
+     Geant4 - an Object-Oriented Toolkit for Physics Simulation
+     ==========================================================
+
+           History file for hadronic/util directory
+           ----------------------------------------
+
+This file should be used to summarize modifications introduced in the 
+code and to keep track of all tags.
+
+     ---------------------------------------------------------------
+     * Please list in reverse chronological order (last date on top)
+     ---------------------------------------------------------------
+
+11 Nov 2010  Dennis Wright              (hadr-util-V09-03-01)
+-------------------------------------------------------------
+- G4HadronicWhiteBoard: fix uninitialized ptrs (theProjectile, theDef,
+    theName)
+- G4Nucleus: add dtaBlackTrackEnergyfromAnnihilation and 
+    pnBlackTrackEnergyfromAnnihilation to copy ctor
+    initialize theA, theZ. aEff, zEff to 0 in ctor
+
+08 Mar 2010 G.Folger                    (hadr-util-V09-03-00)
+-------------------------------------------------------------
+-  add interface for integer A&Z to G4Nucleus, and modify G4HadronicWhiteBoard
+   G4LightMedia, and G4ReactionDynamics to use the new interface. 
+
+06 Mar 2009 D.H. Wright for Tatsumi Koi (hadr-util-V09-02-00)
+-------------------------------------------------------------
+- G4StableIsotopes.cc - fill in missing isotope names
+
+23 Jul 2008 D.H. Wright for Vladimir Uzhinskiy (hadr-util-V09-01-01)
+--------------------------------------------------------------------
+- G4ReactionDynamics::GenerateXandPt: fixed bug in momentum bin which
+  caused oscillatory behavior in spectrum:  changed 
+    x = std::min( 1.0, pt*(binl[l-1] + G4UniformRand()*(binl[l]-binl[l-1])/2 ) )
+  to 
+    x = std::min( 1.0, pt*(binl[l-1] + G4UniformRand()*(binl[l]-binl[l-1]) ) )
+
+ 9 Jul 2008 D.H. Wright (hadr-util-V09-01-00)
+---------------------------------------------
+- G4ReactionDynamics::GenerateXandPt: replace exit with G4Exception.
+
+11 Oct 2007 F.W. Jones (hadr-util-V09-00-00)
+--------------------------------------------
+- G4LightMedia: fixed coding errors in inequalities for
+                charge exchange occurrence in PionPlusExchange,
+                KaonZeroShortExchange, and NeutronExchange.
+
+13 August 2007 Dennis Wright (hadr-util-V08-03-00a)
+---------------------------------------------------
+- special CMS tag: geant4-08-03-ref-00 + hadr-util-V08-03-02.
+  On top of geant4-08-03-ref-00, this contains only array bounds, units 
+  and backward peak fixes in G4ReactionDynamics
+
+27 June 2007 Alex Howard (hadr-util-V08-03-03)
+------------------------------------------------
+- Removed DumpCoreOnHadronicException protection around Report() in
+  G4HadronicException, temporary fix to give output for G4NEUTRONHPDATA not set
+
+12 June 2007 Dennis Wright (hadr-util-V08-03-02)
+------------------------------------------------
+- G4ReactionDynamics::TwoCluster : fix array bound violation when backward
+    nucleon count is 0
+
+12 June 2007 Dennis Wright (hadr-util-V08-03-01)
+------------------------------------------------
+- G4ReactionDynamics::TwoCluster : fix two bugs:
+  1) sharp peak at 180 degrees for low and medium energies due to a units
+     error:
+         G4double totalE = kineticE + vMass;
+     was changed to
+         G4double totalE = kineticE*GeV + vMass;
+     Result is that particles from intra-nuclear cascade now have energies
+     ~ 100 MeV instead of almost 0.
+
+  2) sharp peak at 180 degrees for low and medium energies and target nuclei
+     with Z > 6 due to incorrect sampling of polar angle:
+     replaced
+         G4double costheta =
+            1.0 + 2.0*std::log(1.0 - G4UniformRand()) / dtb;
+     with
+         G4double costheta =
+            1.0 + 2.0*std::log(1.0 - G4UniformRand()*factor) / dtb;
+            where factor = 1.0 - std::exp(-dtb) and dtb is momentum-dependent
+
+10 June 2007 Dennis Wright (hadr-util-V08-03-00)
+------------------------------------------------
+- remove un-used classes G4Fuzzy, G4EffectiveCharge, G4ParticleVector
+
+16 April 2007 Dennis Wright (hadr-util-V08-02-01)
+-------------------------------------------------
+- G4HadronicWhiteboard.hh, .cc : add methods to set process and model names
+- G4ReactionDynamics.cc : add pi0 to anti-particle test
+
+19 February 2007 V.Ivanchenko (hadr-util-V08-02-00)
+----------------------------------------------------
+- G4HadFinalState - add initialisation of energy deposition
+
+11 December 2006 Dennis Wright (hadr-util-V08-01-01)
+----------------------------------------------------
+- G4ReactionDynamics::AddBlackTrackParticles
+  protect variables local_npnb, local_ndta from divide by zero
+
+24 November 2006 Dennis Wright (hadr-util-V08-01-00)
+----------------------------------------------------
+- G4HadronicWhiteBoard:
+  replace GHAD message with 
+  "Geant4 Hadronic Reaction Information" and use
+  G4Exception to kill run.
+
+15 May 2006 Dennis Wright (hadr-util-V08-00-05)
+-----------------------------------------------
+- G4Nucleus:
+  replace code in method AtomicMass() with
+ 
+    return G4NucleiProperties::GetNuclearMass(A, Z);
+
+  in order to agree with other methods for getting nucleus mass.
+  Note: new version has electron masses subtracted, while old version
+        included them
+
+02 May 2006 Dennis Wright (hadr-util-V08-00-04)
+-----------------------------------------------
+- G4ReactionDynamics:
+  1) in energy balance part of method GenerateXandPt, try removing pions and kaons
+     before removing nucleons
+  2) in method GetFinalStateNucleons improve and simplify nucleon counting 
+  3) method SuppressChargedPions: check available CM energy before changing pion to 
+           nucleon, also extend test for anti-particles to include strange particles
+  4) in methods GenerateXandPt and TwoCluster, call GenerateNBodyEvent a second time
+           if energy sum is violated, this time with total system energy
+  5) in method TwoCluster, use annihilation black track energy when annihilation channel
+     occurs  
+
+07 Apr 2006 Dennis Wright (hadr-util-V08-00-03)
+-----------------------------------------------
+- G4ReactionDynamics:
+  1) implement exact proton and neutron accounting to improve baryon number 
+     conservation
+  2) add new method GetFinalStateNucleons which returns number of 
+     protons and neutrons generated by the initial projectile-nucleon collision 
+  3) replace spall argument in AddBlackTrackParticles with PinNucleus and 
+     NinNucleus
+
+- G4Nucleus:
+  1) add new method AnnihilationEvaporationEffects which calculates energy to
+     be given to evaporated nucleons after annihilation
+  2) add new methods GetAnnihilationPNBlackTrackEnergy and
+     GetAnnihilationDTABlackTrackEnergy to retrieve the values calculated above 
+
+13 Mar 2006 Dennis Wright (hadr-util-V08-00-02)
+-----------------------------------------------
+- G4Nucleus::GetFermiMomentum(),
+  G4ReactionKinematics::TwoBodyScattering() :
+
+    fix bug #838: momentum is now isotropic.  Previously theta was
+    incorrectly sampled by pi*G4UniformRand().
+
+15 Dec 2005 Dennis Wright (hadr-util-V08-00-01)
+-----------------------------------------------
+- G4ReactionDynamics.cc: add array bounds protection in TwoCluster
+                         (cpar, gpar)
+
+30 Nov 2005 Gabriele Cosmo (hadr-util-V07-01-01)
+-----------------------------------------------
+- Trivial fix in G4ReactionKinematics and G4Nucleus for support of
+  CLHEP-2.0.X series.
+
+25 Nov 2005 Dennis Wright (hadr-util-V07-01-00)
+----------------------------------------------
+- G4HadTmpUtil.cc : <sstream> migration
+
+
+

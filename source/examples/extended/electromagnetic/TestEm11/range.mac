@@ -1,0 +1,37 @@
+# $Id: range.mac,v 1.5 2009-09-22 14:20:31 maire Exp $
+#
+# Macro file for "TestEm11.cc"
+# 
+# compute the csda range of the primary particle
+# with or without fluctuations
+#
+/control/verbose 2
+/run/verbose 2
+#
+/testem/det/setMat Water
+/testem/det/setSizeX  5 mm
+/testem/det/setSizeYZ 5 mm
+#
+/testem/phys/addPhysics  local
+###/testem/phys/addPhysics  empenelope
+###/testem/phys/addPhysics  emlivermore
+#
+/run/initialize
+#
+# prevent any secondary production
+/testem/phys/setCuts 1 km
+#
+# eliminate straggling
+/process/inactivate msc
+/process/eLoss/fluct false
+#
+/gun/particle e-
+/gun/energy 600 keV
+#
+/testem/histo/setFileName range
+/testem/histo/setFileType hbook
+/testem/histo/setHisto 3 200 0 4 mm	# csda range
+#	 
+/testem/event/printModulo 2000
+#
+/run/beamOn 20000

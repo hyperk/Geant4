@@ -1,0 +1,29 @@
+$Id: History,v 1.4 2010-11-08 20:14:41 allison Exp $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                    Example RE03 History file
+                    ------------------------
+This file should be used by the G4 example coordinator to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+ 
+Nov. 07, 2010 J.Allison (exampleRE03-V09-03-01)
+- Introduced G4UIExecutive.
+
+Apr. 06, 2010 M.Asai (exampleRE03-V09-03-00)
+- Replace G4MultipleScattering with G4eMultipleScattering, G4MuMultipleScattering and G4hMultipleScattring.
+
+Nov. 23, 08 M.Asai (exampleRE03-V09-01-00)
+- Add "run4.mac" with cylindrical scoring mesh.
+
+Nov. 14, 07 M.Asai (exampleRE03-V09-00-00)
+- Introducing this example.
+

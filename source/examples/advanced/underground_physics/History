@@ -1,0 +1,104 @@
+-------------------------------------------------------------------
+$Id: History,v 1.23 2010-11-18 17:43:36 allison Exp $
+-------------------------------------------------------------------
+
+     =========================================================
+            Geant4 - Underground Dark Matter experiment
+     =========================================================
+
+                      Category History file
+                      ---------------------
+
+19.01.2011 - L.Pandola (DMX-V09-03-03)
+	   - Removed #includes of G4hLowEnergyIonisation (though commented)
+
+18.11.2010 - J.Allison (DMX-V09-03-02)
+           - DMX.cc: Introduce G4UIExecutive.
+	   - initInter.mac: Improve vis commands.  (Note: With the
+             introduction of /vis/scene/add/trajectories, it is no
+             longer necessary to draw them in EndOfEventAction.  The
+             corresponding locall commands can also be removed.)
+
+03.06.2010 - J.Perl (DMX-V09-03-01)
+             Change /vis/open OGLxxx to /vis/open OGL
+
+16.02.2010 - L. Pandola (DMX-V09-03-00)
+	     Copy of the previous tag, DMX-V09-02-02, which was not submitted for 
+	     testing.
+
+26.10.2009 - L. Pandola (DMX-V09-02-02)
+	     Physics list migrated from LowEnergy processes to the new Livermore 
+	     models. Physics results unchanged for gamma/e-. Possible differences 
+             with ions/protons, since we don't use anymore G4hLowEnergyIonisation
+
+22.10.2009 - L. Pandola (DMX-V09-02-01)
+	     Correct Analysis manager to solve a problem with the HBOOK output files
+	     (ntuples not filled, histograms not saved). Still at the stage of 
+	     pre-migration.
+
+22.10.2009 - L. Pandola (DMX-V09-02-00)
+             Get rid of a warning message and allocation problems with ntuple2
+             Meant to be the reference to verify the migration to new 
+	     Livermore models. 
+
+16.06.2008 - G.A.P.Cirrone (DMX-V09-01-01)
+             Removed AIDA command from GNUmakefile
+
+04.04.2008 - A. Howard (DMX-V09-01-00)
+	     Fixed mis-sized arrays - ring_phys_gas[] and ring_phys_liq[].
+	     Both one were less than the utilized size (!).  This has always
+             been wrong.
+
+06.11.2007 - A. Howard (DMX-V09-00-02)
+	     Corrected micrometer unit in macros from mum to um (old bug since
+             release 8.2)
+
+02.07.2007 - A. Howard (DMX-V09-00-01)
+	     Added G4StepLimiter to physics list (correction of migration to
+             Geant4 9.0)
+
+02.07.2007 - A. Howard (DMX-V09-00-00)
+	     Added missing header file G4hIonisation.hh to DMXPhysicsLists.cc
+
+06.06.2007 - A. Howard (DMX-V08-03-01)
+	     Changed fG4v71 to preferable fMinimal for msc step limitation
+	     Converted to hIonisation from hLowEnergyIonisation until
+             un-initialiased variables are fixed
+
+06.06.2007 - A. Howard (DMX-V08-03-00)
+	     Migrated to new interface for SetMscStepLimitation(fG4v71) in
+             DMXPhysicsList
+
+13.10.2006 - A. Howard (DMX-V08-01-00)
+	     Removed uninitialized UserLimitsForXenon (bug)
+
+07.12.2005 - S. Guatelli (DMX-V07-01-02)
+             Compiles with CLHEP 2.0.2.2
+
+15.11.2005 - G.Cosmo (DMX-V07-01-00)
+             Migration to <sstream> from deprecated <strstream>.
+
+03.05.2005 - J.Allison
+             Replaced vis manager with G4VisExecutive.
+
+07.12.2004 - S. Guatelli (DMX-V06-02-02)
+             G4VParticleChange migrated
+
+29.11.2004 - S. Guatelli (DMX-V06-02-00)
+             Migrated to <cmath>
+
+28.05.2004 - S. Guatelli (DMX-V06-01-00)
+             Migrated to AIDA 3.2.1 and PI 1.2.1
+
+02.12.2003 - G.Cosmo (DMX-V05-02-01)
+             Migrated to new hadronic processes for release 6.0.
+             Fixed compilation warnings.
+
+12.11.2003 - John Allison
+             Updated Vis Manager.
+
+08.11.2002 - A.Howard
+             Migrated to AIDA 3.
+
+28.11.2001 - A.Howard
+             Created, first version.

@@ -1,0 +1,83 @@
+// $Id: History,v 1.19 2010-10-25 00:49:34 gum Exp $
+// ------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                    field04 History file
+                    --------------------
+This file should be used by the G4 example coordinator to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+Oct 24th, 2010 Peter Gumplinger    - fieldex04-V09-03-02
+   include Mie scattering process and update usage of G4PhysListFactory
+
+Jun 3rd, 2010, Peter Gumplinger    - fieldex04-V09-03-01
+   modify F04Trajectory class to compile without warnings against
+   tracking-V09-03-03 by implementing a DrawTrajectory() method.
+
+March 23rd, 2010, Gunter Folger     - fieldex04-V09-03-00
+- add <ctime> header in src/F04RunAction.cc to fix a compile 
+   error on windows.
+
+November 6th, 2009 Peter Gumplinger - fieldex04-V09-02-03
+- rewrite F04PhysicsList and F04PhysicsListMessenger and
+  use the newly available G4PhysListFactory
+
+October 30th, 2009 John Allison - fieldex04-V09-02-02
+- Introduced G4UIExecutive.
+
+June 1st, 2009 Peter Gumplinger - fieldex04-V09-02-01
+- Introduce '/rndm/autoSeed' command and changed the seeding of the
+  RanecuEngine from time(NULL). Default is autoSeed(false).
+
+May 27th, 2009 Gabriele Cosmo - fieldex04-V09-02-00
+-----------------------------
+- Commented out timing for initial seed to allow for reproducibility
+  or results ...
+
+December 11th, 2008 Peter Gumplinger - fieldex04-V09-01-06
+-----------------------------------
+- bug: now the density must be given with units before the call to
+  ConstructNewMaterial
+
+November 25st, 2008 Peter Gumplinger - fieldex04-V09-01-05
+------------------------------------
+- change to AddPhysicsList("emstandard")
+
+November 21st, 2008 Peter Gumplinger - fieldex04-V09-01-04
+------------------------------------
+- changed F04PhysicsList.cc according to 
+  examples/extended/hadronic/Hadr01
+
+July 3rd, 2008 Peter Gumplinger - fieldex04-V09-01-03
+-------------------------------
+- fix: setTheEngine BEFORE setTheSeed in field04.cc
+
+June 2th, 2008 Vladimir Ivanchenko - fieldex04-V09-01-02
+----------------------------------
+- removed obsolete G4HadronProcessStore from PhysicsList
+
+Mar 26th, 2008 Gunter Folger - fieldex04-V09-01-01
+----------------------------
+- final fix to avoid error log - Invalid rotation specification
+  in F04DetectorConstruction::stringToRotationMatrix
+
+Mar 5th, 2008  Peter Gumplinger - fieldex04-V09-01-00
+-------------------------------
+- fix to avoid error log - Invalid rotation specification
+  in F04DetectorConstruction::stringToRotationMatrix
+
+Nov 2nd, 2007  Gabriele Cosmo - fieldex04-V09-00-01
+-----------------------------
+- Minor fixes for porting on Windows platform.
+
+Oct 29th, 2007  Peter Gumplinger - fieldex04-V09-00-00
+--------------------------------
+- First implementation.

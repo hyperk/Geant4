@@ -1,0 +1,66 @@
+# $Id: History,v 1.13 2010-11-19 09:30:42 cirrone Exp $
+# -------------------------------------------------------------------
+# GEANT4 tag $Name: not supported by cvs2svn $
+# -------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+               Xray_Fluorescence example History file
+               --------------------------------------
+This file should be used by G4 developers and category coordinators
+to briefly summarize all major modifications introduced in the code
+and keep track of all category-tags.
+It DOES NOT substitute the  CVS log-message one should put at every
+committal in the CVS repository !
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+24-01-2011 L.Pandola, Tag: XrayFluo-V09-03-04
+- Ensure compatibility with CLHEP 2.1.0.0
+
+18-11-2010 G.A.P.Cirrone, Tag: XrayFluo-V09-03-03
+- Corrected bug in the MercuryPrimaryGeneratorAction file on source definition
+
+18-11-2010 John Allison, Tag: XrayFluo-V09-03-02
+- Introduced G4UIExecutive.
+
+03-06-2010 Joseph Perl, Tag: XrayFluo-V09-03-00
+- Updated vis usage
+
+10-11-2009 Alf, Tag: XrayFluo-V09-02-01
+- Physics List  migrated to new Lowenergy physics processes design
+- XrayFluoDataSet  migrated in order to meet new modification of G4VEMDataSet
+
+10-04-2009 G.A.P.Cirrone, Tag: XrayFluo-V09-02-00
+- Tag for release after the GNUmakefile update
+
+6-03-2009 Guy Barrand (in agreement with G.Cosmo)
+- GNUmakefile : remove the G4ANALYSIS_USE logic found in this file
+  since it is handled already in the config/analysis.gmk.
+  This avoids a duplication in the compilation and link commands
+  of the aida-config options.
+
+15-11-2004 Gabriele Cosmo: XrayFluo-V07-01-00
+- Migration to <sstream> from deprecated <strstream>.
+
+3-5-2005  John Allison
+- Replaced vis manager with G4VisExecutive.
+
+10-12-2004 Alfonso Mantero: XrayFluo-V06-02-01
+- Can now be used in batch mode without histograms.
+
+8-12-2004 Alfonso Mantero: XrayFluo-V06-02-00 
+- General update, including migration to <cmath>.
+
+4-12-2003 Susanna Guatelli: XrayFluo-V05-02-08 
+- Removed the compilation warnings, introduction of VRML viewer.
+  This tag referes to the tag  examples-V05-02-07 prepared for
+  Geant4 6.0 release.
+
+4-12-2003 Susanna Guatelli: XrayFluo-V05-02-07
+- Correspond the head found in CVS. It does not compile.
+- Created.

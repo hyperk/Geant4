@@ -1,0 +1,124 @@
+$Id: History,v 1.33 2010-11-02 16:10:48 allison Exp $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                    GammaTherapy History file
+                    -------------------------
+This file should be used by the G4 example coordinator to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+01-11-10  J.Allison (gtherapy-V09-03-05)
+- Introduced G4UIExecutive.
+
+26-10-10  V.Ivant (gtherapy-V09-03-04)
+- in PrimaryGeneratorAction.hh remove unused methods 
+
+25-10-10  G.Folger  (gtherapy-V09-03-03)
+- in PrimaryGeneratorAction.hh, comment unused definition of 
+    G4ThreeVector GetBeamEnergy()
+
+21-10-10  V.Ivant (gtherapy-V09-03-02)
+- Cleanup AIDA histograms and analysis
+
+06-06-10 J.Perl (gtherapy-V09-03-01)
+- Remove unused variable in EventAction 
+
+04-06-10 J.Perl (gtherapy-V09-03-00)
+- Updated vis usage 
+
+21-11-09  V.Ivant (gtherapy-V09-02-00)
+- update EM physics according to 9.3
+
+11-06-08  V.Ivant (gtherapy-V09-01-00)
+- Remove AIDA from GNUmakefile
+- Added opt3 variant of EM physics
+
+04-07-07  V.Ivant (gtherapy-V09-00-00)
+- Provide a possibility to change cuts between runs
+
+25-05-07  V.Ivant (gtherapy-V08-03-02)
+- Fixed singleton GetPointer method 
+
+24-05-07  V.Ivant (gtherapy-V08-03-01)
+- substitute autoptr by normal pointers in Histo to avoid crash
+
+16 May 07: V.Ivant (gtherapy-V08-03-00)
+- Use renamed EM Phys list components from physics_lists subdirectory;
+
+16 November 06: V.Ivant (gtherapy-V08-01-00)
+- Use Phys list components from physics_list subdirectory;
+- GNUmakefile - LDFLAGS -> LOADLIBS
+
+17 January 06: V.Ivant (gtherapy-V08-00-00)
+- PreciseRange -> CSDARange
+
+06 December 05: G.Cosmo
+- Trivial changes for support of CLHEP-2.0.X series.
+
+02 December 05: V.Ivant (gtherapy-V07-01-02)
+- Fix crash connected with non-static hadrons
+
+23 August 05: V.Ivant (gtherapy-V07-01-01)
+- Add g4v71 builder 
+
+23 August 05: V.Ivant (gtherapy-V07-01-00)
+- Add vis.mac; 
+- Use standard angular distribution for lowenergy PhotoElectric 
+- Add histogram type (aida, root, hbook)
+
+7 June 05: V.Ivant (gtherapy-V07-00-04)
+- Fix step limiter UI 
+
+6 June 05: V.Ivant (gtherapy-V07-00-03)
+- Use "ApplyCuts" option
+
+31 May 05: V.Ivant (gtherapy-V07-00-02)
+- Migrade to NIST materials
+
+9 May 05: V.Ivant (gtherapy-V07-00-01)
+- Remove QED Builder70
+
+3rd May 2005  John Allison  (examples-V07-00-03)
+- Replaced vis manager with G4VisExecutive.
+
+14 April 05: V.Ivant (gtherapy-V07-00-00)
+- Update QED Builder70
+- Return back killing electrons in the gas volume
+
+15 Dec 04: V.Ivant (gtherapy-V06-02-07)
+- Uncomment out the StepFunction in GammaTherapy.in
+- Uncommnet line in PhysicsList constructor,w hich is needed to 
+  get UI command
+
+13 Dec 04: S.Sadilov (gtherapy-V06-02-06)
+- Comment out the StepFunction in GammaTherapy.in
+
+02 Dec 04: V.Ivant (gtherapy-V06-02-05)
+- Migration to cmath
+
+02-12-04 V.Ivan. (gtherapy-V06-02-04)
+- Fix bug - miration in ParticleChange
+- Use EM PhysicsList for 7.0
+
+30-11-04 V.Ivan. (gtherapy-V06-02-03)
+- Fix bug - comment out step max
+
+01-11-04 V.Ivan. (gtherapy-V06-02-02)
+- cleanup for the release
+     
+13-09-04 V.Ivan. (gtherapy-V06-02-01)
+- fix normalisation of histograms; 
+- change position of plane for scoring radial distribution 
+  from 10 cm to 7 cm;  
+
+03-08-04 V.Ivan. (gtherapy-V06-02-00)
+- created;
+     
