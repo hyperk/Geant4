@@ -1,0 +1,72 @@
+$Id: History,v 1.10 2010-12-07 15:20:46 gunter Exp $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                    Example RE02 History file
+                    ------------------------
+This file should be used by the G4 example coordinator to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+Nov 11, 2012 I. Hrivnacova (exampleRE02-V09-05-03)
+- Updated documentation:
+  - Fixed .README files for artefacts from Markdown support
+  - Removed obsolete instructions (how to compile & link)
+
+Oct 12, 2012 A. Dotti (exampleRE02-V09-05-02)
+- Adding forgotten system of units in physics list file
+
+Oct 8, 2012 A.Kimura 
+- revised all codes according to the coding guideline for extended examples
+- the main program exampleRE02 was renamed RE02.
+
+Jul 28, 2012 V.Ivanchenko (exampleRE02-V09-05-01)
+- fixed elastic physics for ions
+
+Jan 27, 2012 T.Aso (exampleRE02-V09-05-00)
+- Fix the indexing scheme of CopyNo() method in the RunAction.
+
+October 10th, 2011  G.Folger  (exampleRE02-V09-04-00)
+- Fix gcc 4.6 compilation warning in RE02EventAction.cc
+
+December 7th, 2010  G.Folger  (exampleRE02-V09-03-05)
+- Bug fix in RE02DetectorConstruction.cc correcting size of C-array
+   fixing crash on Windows
+   
+November 9th, 2010  M.Asai (exampleRE02-V09-03-04)
+- Additional Fixing warning messages.
+
+November 8th, 2010  M.Asai (exampleRE02-V09-03-03)
+- Fixing warning messages.
+
+November 8th, 2010  John Allison (exampleRE02-V09-03-02)
+- Introduced G4UIExecutive.
+ 
+June 4th, 2010  Joseph Perl (exampleRE02-V09-03-01)
+- Updated vis usage.
+ 
+Apr 06, 2010 M.Asai (exampleRE02-V09-03-00)
+- Replace G4MultipleScattering with G4eMultipleScattering, G4MuMultipleScattering and G4hMultipleScattring.
+
+May 18, 2007 M.Asai (exampleRE02-V08-03-00)
+- Fix the indexing scheme of GetIndex() method in the scorers.
+
+Jan. 29, 2007 M.Asai (exampleRE02-V08-02-00)
+- Fix missing null pointer protection in ComputeMaterial() method.
+
+Nov. 17, 2006 T.Aso (exampleRE02-V08-01-00)
+- Reimplement the geometry with G4VNestedParameterization.
+- Modify the scorers according to the nested para,eterisation.
+    
+Nov. 23, 2005 M.Asai (exampleRE02-V07-01-00)
+- Tagged.
+
+Nov. 18, 2005 T.Aso, A.Kimura
+- Created.

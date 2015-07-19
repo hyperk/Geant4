@@ -1,0 +1,80 @@
+# G.A.P.Cirrone
+#
+# Batch macro file. It can be called to run Hadrontherapy in batch with no visualisation
+# 
+#
+# This macro can be used for a proton beam in water. Both electromagnetic and
+# hadronic models are swiched on
+
+#########################
+# Set of the verboses 
+#
+/control/verbose 1
+/tracking/verbose 0
+/run/verbose 1
+/event/verbose 0
+
+##########################
+# Set of the physic models
+#
+/Physics/addPhysics QGSP_BIC_EMY
+
+##########################
+# Initialisation procedure
+#
+/run/initialize
+
+
+##########################
+# Set here the cut and the step max for the tracking. 
+# Suggested values of cut and step:
+#
+# Set cuts ONLY inside the detector
+/Physics/setDetectorCuts 0.01 mm
+
+# Set cuts OUTSIDE the detector 
+/Physics/setCuts 1 mm
+
+/Step/waterPhantomStepMax 0.01 mm 
+
+#########################
+# Set the primary particle type,
+# energy and position along the X direction
+
+
+#---------------------------gps-----------------
+/gps/pos/shape Circle
+/gps/pos/centre -310. 0. 0. cm
+/gps/pos/radius 0. mm
+/gps/pos/sigma_r 2. mm
+/gps/particle proton
+/gps/pos/type Beam
+
+
+# the incident surface is in the y-z plane
+
+/gps/pos/rot1 0 1 0
+/gps/pos/rot2 0 0 1
+
+# the beam is travelling along the x-axis without any angular dispersion (angular despersion set to 0.0)
+#
+
+/gps/ang/rot1 0 0 1
+/gps/ang/rot2 0 1 0 
+/gps/ang/type beam1d 
+/gps/ang/sigma_r 0. deg
+
+
+# the beam energy is in gaussian profile
+#
+/gps/ene/type Gauss
+/gps/ene/mono 62 MeV
+/gps/ene/sigma 0.3 MeV
+
+
+#########################
+# Display the event number
+# during the run
+# 
+/event/printEventNumber 100
+/run/beamOn 1000

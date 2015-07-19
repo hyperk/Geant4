@@ -1,0 +1,58 @@
+$Id: History,v 1.7 2011-01-05 18:49:50 vnivanch Exp $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                    Example ElectronScattering2 History file
+                    ------------------------
+This file should be used by the G4 example coordinator to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+4 Spetember 2012, Ivana Hrivnacova (exampleES2-V09-05-05)
+ - Added CMakeLists.txt:
+ - Added .README  
+   
+20 April 2012, Joseph Perl
+- Apply coding guideline 2.1
+     
+19 April 2012, Joseph Perl
+- Correct area calculation in ElectronRun
+- Apply new examples coding guidelines
+
+09-02-12 V.Ivanchenko (exampleES2-V09-05-04)
+- PhysListEmStandardSS, PhysListEmStandardWVI - more correct order
+    and fixed initialisation        
+     
+29 October 2011, Joseph Perl (exampleES2-V09-04-03)
+- Updated PhysListEmStandard.cc to match version in electronScattering
+
+28 October 2011, Joseph Perl (exampleES2-V09-04-02)
+- Correct physics list setting in macros
+
+08 June 2011, Joseph Perl (exampleES2-V09-04-01)
+- Correct README comments on opt2 and opt3
+
+05 January 2011, V.Ivanchenko (exampleES2-V09-04-00)
+- Added all physics builders from electronScattering example
+
+02 November 2010, John Allison  (exampleES2-V09-03-02)
+- Introduced G4UIexecutive.
+
+28 October 2010, Gunter Folger   (exampleES2-V09-03-01)
+- fix compilation warning in ElectronBenchmarkDetector.cc
+
+4th June 2010, Joseph Perl (exampleES2-V09-03-00)
+- Updated vis usage.
+ 
+9th December 2009, Joseph Perl (exampleES2-V09-02-01)
+- Correct density for C, Cu and Au.
+ 
+3rd December 2009, Joseph Perl (exampleES2-V09-02-00)
+- Introducing this example.

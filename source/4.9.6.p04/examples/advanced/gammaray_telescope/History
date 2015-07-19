@@ -1,0 +1,87 @@
+-------------------------------------------------------------------
+$Id: History,v 1.11 2010-11-11 17:43:55 gunter Exp $
+-------------------------------------------------------------------
+
+     =========================================================
+ 		      Geant4 - gammaray_telescope
+     =========================================================
+
+                          History file
+                          ------------
+
+07.11.2012   L. Pandola and F. Longo, Tag: gammaraytel-V09-05-05
+             Change the logic of the UI/GUI instantiation in the main(), 
+             to avoid problems observed in the STT when running in batch 
+             mode. Minor change in the CMakeLists.txt
+
+02.11.2012   L. Pandola, Tag: gammaraytel-V09-05-04
+	     Remove warnings due to two G4Regions without their own 
+             cut. Change physics list from QGSP_BIC to FTFP_BERT, to 
+	     avoid warnings due to the deprecated LEP models. 
+             Removed gammaraytel.err file.
+
+31.10.2012   L. Pandola and F. Longo, Tag: gammaraytel-V09-05-03
+             Edit the CMakeLists.txt file to fix the AIDA dependency
+             and to properly treat the G4STORE_DATA option
+
+30.10.2012   Luciano Pandola, Tag gammaraytel-V09-05-02
+	     Comment out /vis/viewer/update at the EndOfRun (avoids a warning)
+	     Comment out in gammaraytel.in a command which is no 
+             longer defined 
+
+25.10.2012   Luciano Pandola, Tag: gammaraytel-V09-05-01
+	     Replace CMakeLists.txt to deal with UI/VIS     
+
+11.10.2012   Gabriele Cosmo,  Tag: gammaraytel-V09-05-00
+             Explicit inclusion of units and constants headers.
+
+03.10.2011   Gunter Folger,   Tag: gammaraytel-V09-04-03
+             Fix compilation warnings from gcc 4.6 in GammaRayTelEventAction.cc,
+	     GammaRayTelDetectorConstruction.cc and GammaRayTelTrackerROGeometry.cc
+
+16.09.2011   Pere Mato,  Tag: gammaraytel-V09-04-02
+             Added SVN eol property to file gammaraytel.err to allow proper file comparissons
+
+16.09.2011   Pere Mato,  Tag: gammaraytel-V09-04-01
+             Fixed the error introduced with G4USE_UI conditional code 
+             Added file gammaraytel.err with the expected error output
+
+11.11.2010   Gunter Folger,  Tag: gammaraytel-V09-03-03
+	     Use new G4MultipleScattering classes
+	     Correct initialisation of G4ThreeVector
+	     Use predefined physics list in place of old style 
+	       GammaRayPhysics; latter crashes on exit.
+	     
+09.11.2010   Makoto Asai, Tag: gammaraytel-V09-03-02
+             Fix AIDA file option.
+
+09.11.2010   John Allison, Tag: gammaraytel-V09-03-01
+             Introduce G4UIExecutive.
+
+03.06.2010   Joseph Perl, Tag: gammaraytel-V09-03-00
+             Update vis usage
+
+24.11.2008   G.A.P.Cirrone, Tag: gammaraytel-V09-01-02
+             Updated History file
+
+24.11.2008   G.A.P.Cirrone, Tag: gammaraytel-V09-01-01
+             Fixed compilation problems
+
+11.06.2008   G.A.P.Cirrone (gammaraytel-V09-01-00)
+             Fixed errors in compilation
+
+07-12-2005   Susanna Guatelli (gammaraytel-V07-01-00) 
+             GammaRayParticles introduced
+             G4Exception deriving from Hadronic Physics List deleted
+
+3rd May 2005 John Allison  (examples-V07-00-03)
+             Replaced vis manager with G4VisExecutive.
+
+10.12.2004   Gabriele Cosmo (gammaraytel-V06-02-01)
+             Replaced usage of M_PI with CLHEP's pi.
+
+01.12.2004   Francesco Longo (gammaraytel-V06-02-00)
+             Updates and migration to <cmath>.
+
+01.06.2004   Susanna Guatelli
+             Migration to AIDA 3.2.1 and PI 1.2.1.

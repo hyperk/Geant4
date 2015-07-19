@@ -1,0 +1,22 @@
+# $Id: basic.mac,v 1.4 2009-10-31 18:05:56 maire Exp $
+#
+/control/verbose 2
+/run/verbose 2
+#
+/testem/det/wallMater Water
+/testem/det/wallThickness 5 cm
+#
+/testem/phys/addPhysics standard_opt3
+#
+/run/initialize
+#
+/process/inactivate msc
+/process/eLoss/fluct false
+#
+/process/eLoss/StepFunction 0.2 10 um
+#
+/gun/energy 1 MeV
+#
+/testem/event/printModulo 50000
+#
+/run/beamOn 500000

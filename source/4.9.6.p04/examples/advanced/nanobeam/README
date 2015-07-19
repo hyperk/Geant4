@@ -1,0 +1,132 @@
+-------------------------------------------------------------------
+$Id: README,v 1.9 2010-10-06 12:16:59 sincerti Exp $
+-------------------------------------------------------------------
+
+     =========================================================
+ 		  Geant4 - Nanobeam example
+     =========================================================
+
+                                README file
+                          ----------------------
+
+                           CORRESPONDING AUTHOR 
+
+S. Incerti (a, *) et al.
+a. Centre d'Etudes Nucleaires de Bordeaux-Gradignan 
+(CENBG), IN2P3 / CNRS / Bordeaux 1 University, 33175 Gradignan, France
+* e-mail:incerti@cenbg.in2p3.fr
+
+Last modified by S. Incerti, 06/10/2010
+
+---->1. INTRODUCTION.                                                    
+                                                                       
+The nanobeam example simulates the beam optics of the nanobeam line installed 
+on the AIFIRA electrostatic accelerator facility located at CENBG, 
+Bordeaux-Gradignan, France. For more information on this facility, 
+please visit :
+http://www.cenbg.in2p3.fr/
+
+The code can be used to calculate : 
+1) intrinsic aberration coefficients of the nanobeam line
+2) beam image from a relasitic primary emittance distribution
+3) grid shadow images
+
+Three quadrupole field models can be used :
+- a simple square field model
+- a 3D mesh field model computed from OPERA3D
+- an analytical model based on Enge's model
+
+---->2. GEOMETRY SET-UP.
+ 
+The full magnetic configuration of the nanobeam line is simulated.
+This configuration is made of a combination of a doublet and triplet of 
+5 Oxford Microbeams Ltd. OM50 quadrupoles. 
+
+More details on the experimental setup and its simulation with Geant4 can 
+be found in the following papers:
+
+- A DETAILED RAY-TRACING SIMULATION OF THE HIGH RESOLUTION MICROBEAM AT THE
+AIFIRA FACILITY
+F. Andersson, Ph. Barberet, S. Incerti, Ph. Moretto (CENBG, Gradignan) . Dec 2007.
+Published in Nucl.Instrum.Meth.B266:1653-1658, 2008
+
+- MONTE CARLO SIMULATION OF THE CENBG MICROBEAM AND NANOBEAM LINES WITH THE
+GEANT4 TOOLKIT
+By S. Incerti, Q. Zhang, F. Andersson, Ph. Moretto, G.W. Grime, 
+M.J. Merchant, D.T. Nguyen, C. Habchi, T. Pouthier and H. Seznec
+Published in Nucl.Instrum.Meth.B260:20-27, 2007
+
+- GEANT4 SIMULATION OF THE NEW CENBG MICRO AND NANO PROBES FACILITY
+By S. Incerti, C. Habchi, Ph. Moretto, J. Olivier and H. Seznec. May 2006. 5pp.
+Published in Nucl.Instrum.Meth.B249:738-742, 2006
+
+- A COMPARISON OF RAY-TRACING SOFTWARE FOR THE DESIGN OF QUADRUPOLE MICROBEAM 
+SYSTEMS
+By S. Incerti et al., 
+Published in Nucl.Instrum.Meth.B231:76-85, 2005
+
+---->3  VISUALIZATION
+
+Visualization has not been implemented. 
+
+---->4. HOW TO RUN THE EXAMPLE                                         
+
+1) You must have compiled your Geant4 installation with the FULL version of the
+CLHEP library which can handle matrix operations.
+
+2) The variable G4ANALYSIS_USE must be set to 1.
+
+3) In order to generate histograms, at least one of the AIDA implementations should be 
+ available.
+  
+4) The code should be compiled with gmake and run with :
+
+> $G4WORDIR/bin/$G4SYSTEM/nanobeam 
+
+The macro file default.mac is read by default.
+
+It can be one of the following macro files :
+
+1) for the computation of intrinsic aberration coefficients :
+coef-square.mac : using square magnetic field model (=default.mac)
+coef-map.mac : using 3D map magnetic field model
+coef-enge.mac : using Enge's analytical field model
+
+2) for the simulation of the beam image with a realistic emittance :
+image-square.mac : using square magnetic field model
+image-map.mac : using 3D map magnetic field model
+image-enge.mac : using Enge's analytical field model
+
+3) for the simulation of grid shadow images
+grid-square.mac : using square magnetic field model
+grid-map.mac : using 3D map magnetic field model
+grid-enge.mac : using Enge's analytical field model
+
+These macros files are stored in the ./macros directory.
+
+---->5. PHYSICS
+
+The example runs with protons with fluctuating energies around 3 MeV.
+Standard electromagnetic processes are activated by default (corresponding to the
+Physics builder G4EmStandardPhysics), including the G4StepLimiter process. 
+
+---->6. SIMULATION OUTPUT AND RESULT ANALYZIS                                    
+
+All results are stored in the nanobeam.root file and can be displayed with the provided
+ROOT macro file plot.C: 
+* be sure to have ROOT installed on your machine
+* be sure to be in the nanobeam directory
+* launch ROOT by typing root
+* under your ROOT session, type in : .X plot.C to execute the macro file
+
+This macro file shows :
+- the beam profile along the nanobeam line (only for the computation of intrinsic 
+  coefficients)
+- the beam image (Y vs X) on target
+- the beam emittance (THETA vs X) and (PHY vs Y) on target
+- the grid shadow image (option)
+
+---------------------------------------------------------------------------
+
+Should you have any enquiry, please do not hesitate to contact: 
+incerti@cenbg.in2p3.fr

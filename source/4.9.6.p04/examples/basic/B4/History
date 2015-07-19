@@ -1,0 +1,40 @@
+$Id$
+--------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                    Example B4 History file
+                    ------------------------
+This file should be used by the G4 example coordinator to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+01/11/12 I. Hrivnacova (exampleB4-V09-05-02)
+- Implemented new way of handling program arguments in main()
+
+26/10/12 I. Hrivnacova (exampleB4-V09-05-01)
+- Replaced messenger classes with use of G4GenericMessenger
+
+18/09/12 I. Hrivnacova
+- Updated code using analysis:
+  - Now only a selected analysis manager is included 
+  - Making directories in output file is optional
+  - Adding a line using G4AnalysisManager::GetType()
+- General changes (see basic/History)
+
+13/01/12 I. Hrivnacova (exampleB4-V09-05-00)
+- Fixed compiler warning on windows:
+  Allocating the messenger in the DetectorConstruction and EventAction classes
+  constructors in the constructor body and not in the initialization list
+  (to avoid passing 'this' in the initializer list).
+
+14/11/11 I. Hrivnacova 
+- The first tagged version of the new B4 example
+  (tagged in basic). 
+  Started from novice/N03.
