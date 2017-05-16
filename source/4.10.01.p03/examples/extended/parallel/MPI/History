@@ -1,0 +1,96 @@
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                      Category History file
+                      ---------------------
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+21 July 2014 A. Dotti (MPI-V10-00-02)
+- Fixing bug for RNG seed distribution in MT compilations
+  (Bug #1653)
+
+13 June 2014 A. Dotti (MPI-V10-00-01)
+- Adding first version of G4RunMerger and 
+  G4ScorerMerger
+
+10 June 2014 A. Dotti (MPI-V10-00-00)
+- New CMake receipe: increase portability of the code
+ 
+10 Novembeer 2013 K. Murakami (MPI-V09-06-00)
+[source]
+- new coding guide line
+- CMakeLists.txt, add BUILD_SHARED_LIBS flag for creating static lib
+                  add check IntelMPI, mpiicpc
+- MT migration : beamOn thread stacked to main for MT
+                 use /run/beamOn command, instead of direct call of RM.BeamOn()
+[examples]
+- change coding guideling to the example guide 
+- MT migration
+- PhysicsList is changed to FTFP_BERT
+- add run.mac
+
+20 November 2012, I. Hrivnacova (MPI-V09-05-06)
+- Fixed .README files
+
+20 November 2012, I. Hrivnacova (MPI-V09-05-05)
+- Fixed CmakeLists.txt in the top directory
+
+16 November 2012, K. Murakami (MPI-V09-05-04)
+- Updated CmakeLists.txt for examples. Fixed link errors.
+- Updated README document.
+
+16 November 2012, I. Hrivnacova (MPI-V09-05-03)
+- Update of CMake files:
+  - Added CMakeLists.txt in for processing MPI from upper directories
+  - Removed exMPI02/FindROOT.cmake (available with Geant4 distribution)
+  - Minor changes in exMPI01, exMPI02 CMake build in order to be able
+    to build examples from the upper directories
+  - Added comment lines 
+  - Added copying macros in the build area
+  - Install targets under CMAKE_INSTALL_PREFIX/bin and not in source
+
+15 November 2012, K. Murakami (MPI-V09-05-02)
+ - typos in documents are fixed.
+
+8 November 2012, K. Murakami (MPI-V09-05-01)
+ - explicit inclusion of G4SystemOfUnits.hh and G4PhysicalConstants.hh
+ - updated documentations
+
+1 November 2012, K. Murakami (MPI-V09-05-00)
+ - Migrated to CMake build with change of directory structure.
+ - G4Exception is replaced with new one.
+ - Fixed infinite-loop of slaves when a macro does not exists.
+ - Added support for execution of maro with /control/macroPath.
+ - Added best guess of selection of a UI shell.
+ - Added Doxygen-style docs.
+
+3 December 2010 K. Murakami (MPI-V09-03-02)
+ - /mpi/wait command is removed. It is automatically called
+   at the end of macro(batch) execution.
+
+4 June 2010 J.Perl (MPI-V09-03-01)
+ - Updated vis usage.
+
+18 May 2010 K.Murakami (MPI-V09-03-00)
+ == code review was performed. ==
+ << mpi_ineterface >>
+ - OpenMPI as default MPI library instead of LAM/MPI
+ - improve /mpi/status command. (waste of CPU, time measurement)
+ - /mpi/wait command is introduced for waiting until beamOn ends.
+ - improve macro file parser
+    * same parser as G4UIbatch
+    * fixed unexpected behavior at the end of batch mode
+ - changed "beamOn" behavior for better performance
+    * thread-out for interactive, on-thread for batch
+ << exMPI01 >>
+ - use G4UIcsh instead of G4UItcsh because OpenMPI is now default. 
+ - use G4eMultipleScattering instead of obsolete G4MultipleScattering.
+ << exMPI02 >>
+ - use G4UIcsh instead of G4UItcsh because OpenMPI is now default.
+
+16 Nov. 2007 K.Murakami
+ - commited to G4 CVS.

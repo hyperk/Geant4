@@ -1,0 +1,278 @@
+
+        ############################################
+        !!! WARNING - FPE detection is activated !!!
+        ############################################
+
+*************************************************************
+ Geant4 version Name: geant4-10-01-patch-03    (5-February-2016)
+                      Copyright : Geant4 Collaboration
+                      Reference : NIM A 506 (2003), 250-303
+                            WWW : http://cern.ch/geant4
+*************************************************************
+
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Current available graphics systems are:
+  ASCIITree (ATree)
+  DAWNFILE (DAWNFILE)
+  G4HepRep (HepRepXML)
+  G4HepRepFile (HepRepFile)
+  OpenGLImmediateX (OGLIX)
+  OpenGLImmediateXm (OGLI, OGLIXm)
+  OpenGLStoredX (OGLSX)
+  OpenGLStoredXm (OGL, OGLS, OGLSXm)
+  RayTracer (RayTracer)
+  RayTracerX (RayTracerX)
+  VRML1FILE (VRML1FILE)
+  VRML2FILE (VRML2FILE)
+  gMocrenFile (gMocrenFile)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByCharge
+  drawByParticleID
+  drawByOriginVolume
+  drawByAttribute
+
+Registered filter factories:
+  chargeFilter
+  particleFilter
+  originVolumeFilter
+  attributeFilter
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+Available colours:
+  black, blue, brown, cyan, gray, green, grey, magenta, red, white, yellow
+
+/run/verbose 1
+#
+/gun/particle ion
+/gun/ion 27 60
+#
+/rdecay01/fullChain false
+#
+/tracking/verbose 2
+/run/beamOn 1
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 1 region:
+          DefaultRegionForTheWorld
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_AIR
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+====================================================================
+
+### Run 0 starts.
+
+*********************************************************************************************************
+* G4Track Information:   Particle = Co60,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+
+Step#      X         Y         Z        KineE    dEStep   StepLeng  TrakLeng    Volume     Process
+    0      0 fm      0 fm      0 fm      0 eV      0 eV      0 fm      0 fm      World   initStep
+    1      0 fm      0 fm      0 fm      0 eV      0 eV      0 fm      0 fm      World   RadioactiveDecay
+
+    :----- List of secondaries ----------------
+   Ni60[2505.766]:  energy =0.3487 eV   time = 9.982 y  
+       anti_nu_e:  energy = 188.7 keV  time = 9.982 y  
+              e-:  energy = 129.4 keV  time = 9.982 y  
+    :------------------------------------------
+
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 4,   Parent ID = 1
+*********************************************************************************************************
+
+Step#      X         Y         Z        KineE    dEStep   StepLeng  TrakLeng    Volume     Process
+    0      0 fm      0 fm      0 fm    129 keV     0 eV      0 fm      0 fm      World   initStep
+    1   -217 um  -35.7 um      1 mm    129 keV     0 eV   1.02 mm   1.02 mm      World   OutOfWorld
+
+*********************************************************************************************************
+* G4Track Information:   Particle = anti_nu_e,   Track ID = 3,   Parent ID = 1
+*********************************************************************************************************
+
+Step#      X         Y         Z        KineE    dEStep   StepLeng  TrakLeng    Volume     Process
+    0      0 fm      0 fm      0 fm    189 keV     0 eV      0 fm      0 fm      World   initStep
+    1    217 um   35.7 um     -1 mm    189 keV     0 eV   1.02 mm   1.02 mm      World   OutOfWorld
+
+*********************************************************************************************************
+* G4Track Information:   Particle = Ni60[2505.766],   Track ID = 2,   Parent ID = 1
+*********************************************************************************************************
+
+Step#      X         Y         Z        KineE    dEStep   StepLeng  TrakLeng    Volume     Process
+    0      0 fm      0 fm      0 fm  0.349 eV      0 eV      0 fm      0 fm      World   initStep
+
+ end of event      0 : Co60 ---> Ni60[2505.766]
+ Run terminated.
+Run Summary
+  Number of events processed : 1
+  User=0s Real=0.01s Sys=0s
+
+ ======================== run summary ======================
+ The run was 1 Co60 of 0 eV 
+ ===========================================================
+
+ Nb of generated particles: 
+
+  Ni60[2505.766]:       1  Emean = 0.3487 eV 	( 0.3487 eV  --> 0.3487 eV )
+      anti_nu_e:       1  Emean =  188.7 keV	( 188.7 keV --> 188.7 keV)
+             e-:       1  Emean =  129.4 keV	( 129.4 keV --> 129.4 keV)
+
+   Ekin Total (Q): mean =  318.1 keV	( 318.1 keV --> 318.1 keV)
+
+   Momentum balance (excluding gamma desexcitation): mean = 0.02965 eV 	( 0.02965 eV  --> 0.02965 eV )
+
+   Total time of life : mean =  9.982 y    half-life =  6.919 y     ( 9.982 y   --> 9.982 y  )
+
+   Activity of Co60 = 3.188e+13 Bq/g   (861.7 Ci/g) 
+
+#
+/tracking/verbose 0
+/rdecay01/event/printModulo 10000
+#
+/run/beamOn 100000
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_AIR
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+====================================================================
+
+### Run 1 starts.
+
+ end of event      0 : Co60 ---> Ni60[2505.766]
+
+ end of event  10000 : Co60 ---> Ni60[2505.766]
+
+ end of event  20000 : Co60 ---> Ni60[2505.766]
+
+ end of event  30000 : Co60 ---> Ni60[2505.766]
+
+ end of event  40000 : Co60 ---> Ni60[2505.766]
+
+ end of event  50000 : Co60 ---> Ni60[2505.766]
+
+ end of event  60000 : Co60 ---> Ni60[2505.766]
+
+ end of event  70000 : Co60 ---> Ni60[2505.766]
+
+ end of event  80000 : Co60 ---> Ni60[2505.766]
+
+ end of event  90000 : Co60 ---> Ni60[2505.766]
+ Run terminated.
+Run Summary
+  Number of events processed : 100000
+  User=4.88s Real=4.88s Sys=0s
+
+ ======================== run summary ======================
+ The run was 100000 Co60 of 0 eV 
+ ===========================================================
+
+ Nb of generated particles: 
+
+  Ni60[1332.518]:     118  Emean =  7.635 eV 	( 0.007552 eV  --> 24.89 eV )
+  Ni60[2505.766]:   99882  Emean =  0.433 eV 	( 0 eV  --> 3.716 eV )
+      anti_nu_e:  100000  Emean =  223.7 keV	( 3.919 keV --> 1.483 MeV)
+             e-:  100000  Emean =  95.86 keV	( 2.068 eV  --> 1.359 MeV)
+
+   Ekin Total (Q): mean =  319.5 keV	( 318.1 keV --> 1.491 MeV)
+
+   Momentum balance (excluding gamma desexcitation): mean =  3.922 eV 	( 1.591e-05 eV  --> 840.3 eV )
+
+   Total time of life : mean =  7.607 y    half-life =  5.273 y     ( 15.92 min --> 94.63 y  )
+
+   Activity of Co60 = 4.184e+13 Bq/g   (1131 Ci/g) 
+
+#
+/rdecay01/fullChain true
+#
+/run/beamOn 100000
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_AIR
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+====================================================================
+
+### Run 2 starts.
+
+ end of event      0 : Co60 ---> Ni60[2505.766] ---> Ni60
+
+ end of event  10000 : Co60 ---> Ni60[2505.766] ---> Ni60
+
+ end of event  20000 : Co60 ---> Ni60[2505.766] ---> Ni60
+
+ end of event  30000 : Co60 ---> Ni60[2505.766] ---> Ni60
+
+ end of event  40000 : Co60 ---> Ni60[2505.766] ---> Ni60
+
+ end of event  50000 : Co60 ---> Ni60[2505.766] ---> Ni60
+
+ end of event  60000 : Co60 ---> Ni60[2505.766] ---> Ni60
+
+ end of event  70000 : Co60 ---> Ni60[2505.766] ---> Ni60
+
+ end of event  80000 : Co60 ---> Ni60[2505.766] ---> Ni60
+
+ end of event  90000 : Co60 ---> Ni60[2505.766] ---> Ni60
+ Run terminated.
+Run Summary
+  Number of events processed : 100000
+  User=5.78s Real=5.8s Sys=0s
+
+ ======================== run summary ======================
+ The run was 100000 Co60 of 0 eV 
+ ===========================================================
+
+ Nb of generated particles: 
+
+           Ni60:  100000  Emean = 0.4485 eV 	( 0 eV  --> 24.15 eV )
+  Ni60[1332.518]:     120  Emean =  7.324 eV 	( 0.0001455 eV  --> 24.15 eV )
+  Ni60[2505.766]:   99880  Emean = 0.4403 eV 	( 0 eV  --> 3.653 eV )
+      anti_nu_e:  100000  Emean =  222.9 keV	( 6.327 keV --> 1.478 MeV)
+             e-:  100031  Emean =  97.05 keV	( 2.176 eV  --> 1.347 MeV)
+          gamma:  199856  Emean =  1.253 MeV	( 346.9 keV --> 1.333 MeV)
+
+   Ekin Total (Q): mean =  1.412 MeV	( 318.1 keV --> 2.506 MeV)
+
+   Momentum balance (excluding gamma desexcitation): mean =  266.7 eV 	( 0 eV  --> 1.763 MeV)
+
+   Total time of life : mean =  7.639 y    half-life =  5.295 y     ( 24.31 min --> 87.32 y  )
+
+   Activity of Co60 = 4.167e+13 Bq/g   (1126 Ci/g) 
+
+Graphics systems deleted.
+Visualization Manager deleting...
+G4 kernel has come to Quit state.
+================== Deleting memory pools ===================
+Number of memory pools allocated: 10 of which, static: 0
+Dynamic pools deleted: 10 / Total memory freed: 0.012 Mb
+============================================================
+RunManagerKernel is deleted. Good bye :)

@@ -1,0 +1,16 @@
+# $Id: basic.mac 86064 2014-11-07 08:49:32Z gcosmo $
+#
+/control/verbose 2
+/run/verbose 2
+#
+/run/initialize
+#
+/process/inactivate msc
+/process/eLoss/fluct false
+#
+/analysis/setFileName nothing
+/analysis/h1/set 9 100  0  1 mm	#step size in wall
+#
+/testem/event/printModulo 10000
+#
+/run/beamOn 200000
