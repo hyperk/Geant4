@@ -10,9 +10,10 @@ class Geant4(CMake):
         super().__init__(path)
 
         self._package_name = "Geant4"
-        self._package_version = "4.10.01.p03"
+        self._package_version = "4.11.0.2"
+        self._download_url = "https://geant4-data.web.cern.ch/releases/geant4-v11.0.2.zip"
 
-        self._cmakelist_path = "source/4.10.01.p03"
+        self._cmakelist_path = "src/geant4-v11.0.2"
 
         self._cmake_options = {
             "WITH_TLS": "OFF"
