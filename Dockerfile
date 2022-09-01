@@ -4,5 +4,5 @@ COPY . /usr/local/hk/Geant4
 
 WORKDIR /usr/local/hk
 
-RUN . /usr/local/hk/hkpilot/setup.sh &&\
+RUN . /usr/local/hk/hk-pilot/setup.sh &&\
     hkp install Geant4
