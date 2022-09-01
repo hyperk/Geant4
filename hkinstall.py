@@ -26,8 +26,8 @@ class Geant4(CMake):
     
     def post_install(self):
         logger.info(f"Post-installation of {self._package_name} in progress...")
-        src = f"{os.environ.get('HK_WORK_DIR')}/{self._package_name}/install-{os.environ.get('HK_SYSTEM')}/lib64/{self._package_name}-{self._package_version}"
-        dst = f"{os.environ.get('HK_WORK_DIR')}/{self._package_name}/install-{os.environ.get('HK_SYSTEM')}/lib64/cmake"
+        src = f"{os.environ.get('HK_WORK_DIR')}/{self._package_name}/install-{os.environ.get('HK_SYSTEM')}/lib/{self._package_name}-{self._package_version}"
+        dst = f"{os.environ.get('HK_WORK_DIR')}/{self._package_name}/install-{os.environ.get('HK_SYSTEM')}/lib/cmake"
         logger.debug(f"Creating symlink between {src} and {dst}")
         if os.path.exists(dst):
             os.unlink(dst)
