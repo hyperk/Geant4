@@ -1,4 +1,4 @@
-FROM ghcr.io/hyper-k/hkpilot:latest
+FROM ghcr.io/hyper-k/hk-pilot:latest
 
 COPY . /usr/local/hk/Geant4
 
