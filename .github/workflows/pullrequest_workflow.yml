@@ -1,0 +1,19 @@
+name: Build on push
+
+on: [pull_request]
+
+jobs:
+
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        name: Repo checkout
+        with:
+          persist-credentials: true
+          
+      - name: Build the Docker image
+        run: docker build . --file Dockerfile --tag ghcr.io/hyperk/Geant4:latest
