@@ -24,8 +24,17 @@ class Geant4(CMake):
 
     def post_install(self):
         logger.info(f"Post-installation of {self._package_name} in progress...")
-        src = f"{os.environ.get('HK_WORK_DIR')}/{self._package_name}/install-{os.environ.get('HK_SYSTEM')}/lib64/{self._package_name}-{self._package_version}"
-        dst = f"{os.environ.get('HK_WORK_DIR')}/{self._package_name}/install-{os.environ.get('HK_SYSTEM')}/lib64/cmake"
+
+        src = f"{self._install_folder}/lib/{self._package_name}-{self._package_version}"
+        dst = f"{self._install_folder}/lib/cmake"
+        if not os.path.exists(src):
+            if os.path.exists(f"{self._install_folder}/lib64"):
+                logger.info("Switching to lib64 folder for cmake...")
+                src = f"{self._install_folder}/lib64/{self._package_name}-{self._package_version}"
+                dst = f"{self._install_folder}/lib64/cmake"
+            else:
+                logger.error(f"Cannot find lib or lib64 subfolder!")
+                # return False
         logger.debug(f"Creating symlink between {src} and {dst}")
         if os.path.exists(dst):
             os.unlink(dst)
