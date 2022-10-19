@@ -6,12 +6,12 @@ import os
 
 logger = fancylogger.getLogger(__name__)
 
-class HKGeant4(CMake):
+class Geant4(CMake):
 
     def __init__(self, path):
         super().__init__(path)
 
-        self._package_name = "hk-Geant4"
+        self._package_name = "Geant4"
         self._package_version = "10.1.3"
         self._download_url = "http://cern.ch/geant4-data/releases/geant4_10_01_p03.zip"
 
