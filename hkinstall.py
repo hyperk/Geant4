@@ -12,7 +12,6 @@ class Geant4(CMake):
         super().__init__(path)
 
         self._package_name = "Geant4"
-        self._package_version = "10.1.3"
         self._download_url = "http://cern.ch/geant4-data/releases/geant4_10_01_p03.zip"
 
         self._cmakelist_path = "src/geant4_10_01_p03"
@@ -22,8 +21,6 @@ class Geant4(CMake):
             "GEANT4_INSTALL_DATA": "ON"
         }
 
-        # self._path = os.path.relpath(inspect.getfile(self.__class__))
-    
     def post_install(self):
         logger.info(f"Post-installation of {self._package_name} in progress...")
 
