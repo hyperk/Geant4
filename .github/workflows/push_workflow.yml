@@ -2,7 +2,7 @@ name: Build on push
 
 on:
   push:
-    branches: [master]
+    branches: [main]
     tags: ['*']
 
 env:
