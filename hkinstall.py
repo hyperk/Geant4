@@ -12,24 +12,24 @@ class Geant4(CMake):
         super().__init__(path)
 
         self._package_name = "Geant4"
-        self._download_url = "http://cern.ch/geant4-data/releases/geant4_10_01_p03.zip"
+        self._download_url = "https://gitlab.cern.ch/geant4/geant4/-/archive/v11.0.3/geant4-v11.0.3.zip"
 
-        self._cmakelist_path = "src/geant4_10_01_p03"
-
+        self._cmakelist_path = "src/geant4-v11.0.3"
         self._cmake_options = {
             "WITH_TLS": "OFF",
             "GEANT4_INSTALL_DATA": "ON"
         }
+        self._geant4_version="11.0.3" # overriding value defined by git for post_install
 
     def post_install(self):
         logger.info(f"Post-installation of {self._package_name} in progress...")
 
-        src = f"{self._install_folder}/lib/{self._package_name}-{self._package_version}"
+        src = f"{self._install_folder}/lib/{self._package_name}-{self._geant4_version}"
         dst = f"{self._install_folder}/lib/cmake"
         if not os.path.exists(src):
             if os.path.exists(f"{self._install_folder}/lib64"):
                 logger.info("Switching to lib64 folder for cmake...")
-                src = f"{self._install_folder}/lib64/{self._package_name}-{self._package_version}"
+                src = f"{self._install_folder}/lib64/{self._package_name}-{self._geant4_version}"
                 dst = f"{self._install_folder}/lib64/cmake"
             else:
                 logger.error(f"Cannot find lib or lib64 subfolder!")
