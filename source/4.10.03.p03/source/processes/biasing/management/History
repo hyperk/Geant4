@@ -1,0 +1,62 @@
+$Id: History 101028 2016-11-04 08:40:08Z gcosmo $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                      Category History file
+                      ---------------------
+This file should be used by G4 developers and category coordinators
+to briefly summarize all major modifications introduced in the code
+and keep track of all category-tags.
+It DOES NOT substitute the  CVS log-message one should put at every
+committal in the CVS repository !
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+Nov 3rd, 2016, M. Verderi
+- remove obsolete BAC_DenyInteraction value in G4BiasingAppliedCase
+  enum and clean up of obsolete (and commeted out) portion of codes
+  related to this case.
+- tag :  : proc-biasmng-V10-02-02
+
+May 30th, 2016, M. Verderi
+- check for unbounded while loop in G4ProcessPlacer.cc
+- tag :  : proc-biasmng-V10-02-01
+
+January 19th, 2016, M. Verderi
+- fix coveriy warnings in src/G4VBiasingOperator.cc
+- tag : proc-biasmng-V10-02-00
+
+November 6th, 2015, M. Verderi
+- adaptation to using G4VAuxiliaryTrackInformation:
+  o Removal of classes:
+       - G4BiasingTrackData
+       - G4BiasingTrackDataStore
+  o Removal of methods:
+      G4VBiasingOperator::GetBirthOperation(const G4Track* track )
+	                ::RememberSecondaries(...)
+                        ::ForgetTrack(...)
+- tag : proc-biasmng-V10-01-00
+
+November 10th, 2014 M. Verderi
+- Fix G4BiasingOperatorStateNotifier::Notify(...) to detect
+  start of run.
+- tag : proc-biasmng-V10-00-01
+
+November 7th, 2014 M. Verderi
+- G4VBiasingOperation : suppression of DenyProcessPostStepDoIt(...)
+  as redondant and special case of ApplyFinalStateBiasing(...).
+  tag : proc-biasmng-V10-00-00 
+
+
+November 22nd, 2013  A.Howard
+- Moved G4VProcessPlacer and G4ProcessPlacer from importance
+
+October 10th, 2013  A.Howard
+- Subdirectory and history file created.
+
+

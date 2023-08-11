@@ -1,0 +1,111 @@
+#
+# Macro file 'salice.mac' for the initialization phase of "TestEm10.cc"       
+# with ALICE simplified test beam setup
+#
+/control/verbose 2
+#
+#
+/run/verbose 2
+#
+#  PLOT: energy deposit distribution in absorber (g4.11)
+#
+/analysis/setFileName alice06
+/analysis/h1/set  1 100 0.00  0.1  MeV   # Edep
+/analysis/h1/set  2 100 0.00  0.1  MeV   # XTR gamma
+/analysis/h1/set  3 100 0.00  0.1  MeV   # all gamma
+/analysis/h1/set  4 100 0.00  0.1  MeV   # all e-
+/analysis/h1/set  5 41 0.00  0.041  MeV  # En (Edep with original limits)
+#
+#
+# Change and choice of experimental setups. Can be
+# simpleALICE., 
+#
+#
+/XTRdetector/setup alice06
+#
+# these commands do not change energy cuts???
+#
+# Set XTR model (default: transpM). Name list consits:
+# gammaR, gammaM, regR, regM, strawR, transpR, transpM
+#
+# R - XTR dE/dx models, M - XTR flux after radiator models
+#
+/emphyslist/setXTRModel  transpM
+#/emphyslist/setXTRModel  transpR
+#/emphyslist/setXTRModel  gammaM
+#/emphyslist/setXTRModel  gammaR
+#/emphyslist/setXTRModel  strawR
+#/emphyslist/setXTRModel  regM
+#/emphyslist/setXTRModel  regR
+#
+#/emphyslist/eMinEnergy 100.  
+#/emphyslist/gMinEnergy 100.  
+#
+#
+/run/particle/applyCuts
+#
+/run/initialize
+#
+# set cuts
+#
+/run/setCut 0.001
+/run/setCutForRegion Radiator 0.001
+/run/setCutForRegion Absorber 1.01
+#
+#/hits/verbose 1
+#
+/geometry/test/run
+#
+#/XTRdetector/update
+#
+#Innactivate some processes: msc eIoni eBrem RegularXTRadiator
+#                            hIoni 
+#
+# (switch off dEdx and msc always together!)
+#
+#/process/inactivate msc
+#/process/inactivate eIoni
+#/process/inactivate hIoni
+#
+#/process/inactivate eBrem
+#
+# Inactivate gamma processes
+#
+#/process/inactivate phot
+#/process/inactivate compt
+#/process/inactivate conv
+#
+/process/inactivate UserMaxStep
+#
+#/process/inactivate SynchrotronRadiation
+#
+#/process/inactivate RegularXTRadiator
+#
+#/process/inactivate GammaXTRadiator
+#
+#/process/eLoss/fluct false
+#
+#/process/verbose 1
+#
+#
+# Particle and its energy
+#
+/gun/particle e-
+/gun/energy 2000.0 MeV
+#
+
+#/tracking/verbose 1
+#
+/run/printProgress 1000
+/run/beamOn 10000
+#
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1285 @@
+####   Starting: /mnt/build/jenkins/workspace/g4-slc6/COMPILER/gcc49/LABEL/slc6/THREAD/Seq/release/RelWithDebInfo/geant4-10-03-patches_branch/build/examples/extended/hadronic/FissionFragment/FissionFragment    ####
+MT RNG Seed: 62737819
+
+        ############################################
+        !!! WARNING - FPE detection is activated !!!
+        ############################################
+
+*************************************************************
+ Geant4 version Name: geant4-10-03-patch-03    (20-October-2017)
+                      Copyright : Geant4 Collaboration
+                      Reference : NIM A 506 (2003), 250-303
+                            WWW : http://cern.ch/geant4
+*************************************************************
+
+<<< Geant4 Physics List simulation engine: QGSP_BIC_HP 2.0
+
+Checking overlaps for volume Floor ... OK! 
+Checking overlaps for volume Tank_Wall ... OK! 
+Checking overlaps for volume Tank_Air ... OK! 
+Checking overlaps for volume Tank_H2O ... OK! 
+Checking overlaps for volume Plate_Meat ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:1.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-1.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:1.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-1.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:1.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-1.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:2.10 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-2.10 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:2.40 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-2.40 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:2.70 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-2.70 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:3.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-3.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:3.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-3.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:3.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-3.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:3.90 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-3.90 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:4.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-4.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:4.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-4.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:4.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-4.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:5.10 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-5.10 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:5.40 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-5.40 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:5.70 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-5.70 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:6.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-6.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:6.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-6.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:6.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-6.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:6.90 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-6.90 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:7.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-7.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:7.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-7.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:7.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-7.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:8.10 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-8.10 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:8.40 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-8.40 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:8.70 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-8.70 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:9.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-9.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:9.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-9.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:9.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-9.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:9.90 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-9.90 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:10.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-10.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:10.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-10.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:10.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-10.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:11.10 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-11.10 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:11.40 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-11.40 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:11.70 ... OK! 
+Checking overlaps for volume Plate@Location    X:0.00    Y:-11.70 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:0.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-0.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:0.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-0.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:0.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-0.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:0.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-0.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:0.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-0.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:0.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-0.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:0.90 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-0.90 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:0.90 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-0.90 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:1.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-1.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:1.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-1.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:1.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-1.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:1.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-1.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:1.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-1.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:1.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-1.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:2.10 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-2.10 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:2.10 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-2.10 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:2.40 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-2.40 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:2.40 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-2.40 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:2.70 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-2.70 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:2.70 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-2.70 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:3.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-3.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:3.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-3.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:3.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-3.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:3.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-3.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:3.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-3.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:3.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-3.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:3.90 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-3.90 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:3.90 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-3.90 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:4.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-4.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:4.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-4.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:4.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-4.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:4.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-4.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:4.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-4.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:4.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-4.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:5.10 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-5.10 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:5.10 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-5.10 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:5.40 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-5.40 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:5.40 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-5.40 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:5.70 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-5.70 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:5.70 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-5.70 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:6.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-6.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:6.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-6.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:6.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-6.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:6.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-6.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:6.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-6.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:6.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-6.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:6.90 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-6.90 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:6.90 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-6.90 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:7.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-7.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:7.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-7.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:7.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-7.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:7.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-7.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:7.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-7.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:7.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-7.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:8.10 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-8.10 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:8.10 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-8.10 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:8.40 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-8.40 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:8.40 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-8.40 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:8.70 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-8.70 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:8.70 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-8.70 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:9.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-9.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:9.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-9.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:9.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-9.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:9.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-9.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:9.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-9.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:9.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-9.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:9.90 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-9.90 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:9.90 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-9.90 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:10.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-10.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:10.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-10.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:10.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-10.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:10.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-10.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:10.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:5.00    Y:-10.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:10.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:-5.00    Y:-10.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:0.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:-0.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:0.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:-0.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:0.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:-0.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:0.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:-0.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:0.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:-0.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:0.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:-0.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:0.90 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:-0.90 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:0.90 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:-0.90 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:1.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:-1.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:1.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:-1.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:1.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:-1.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:1.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:-1.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:1.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:-1.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:1.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:-1.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:2.10 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:-2.10 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:2.10 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:-2.10 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:2.40 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:-2.40 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:2.40 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:-2.40 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:2.70 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:-2.70 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:2.70 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:-2.70 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:3.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:-3.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:3.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:-3.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:3.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:-3.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:3.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:-3.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:3.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:-3.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:3.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:-3.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:3.90 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:-3.90 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:3.90 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:-3.90 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:4.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:-4.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:4.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:-4.20 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:4.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:-4.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:4.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:-4.50 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:4.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:-4.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:4.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:-4.80 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:5.10 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:-5.10 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:5.10 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:-5.10 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:5.40 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:-5.40 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:5.40 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:-5.40 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:5.70 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:-5.70 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:5.70 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:-5.70 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:6.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:-6.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:6.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:-6.00 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:6.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:-6.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:6.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:-6.30 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:6.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:10.00    Y:-6.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:6.60 ... OK! 
+Checking overlaps for volume Plate@Location    X:-10.00    Y:-6.60 ... OK! 
+312 plates were added to the subcritical assembly
+Checking overlaps for volume NeutronSource ... OK! 
+Checking overlaps for volume Poly ... OK! 
+Checking overlaps for volume Detector_Shell ... OK! 
+Checking overlaps for volume Detector_BF3_Core ... OK! 
+/mnt/build/jenkins/workspace/g4-slc6/COMPILER/gcc49/LABEL/slc6/THREAD/Seq/release/RelWithDebInfo/geant4-10-03-patches_branch/build/data/G4NDL4.5
+@@@ G4ParticleHPInelastic instantiated for particle neutron data directory variable is G4NEUTRONHPDATA pointing to /mnt/build/jenkins/workspace/g4-slc6/COMPILER/gcc49/LABEL/slc6/THREAD/Seq/release/RelWithDebInfo/geant4-10-03-patches_branch/build/data/G4NDL4.5/Inelastic
+@@@ G4ParticleHPInelasticData instantiated for particle neutron data directory variable is G4NEUTRONHPDATA pointing to /mnt/build/jenkins/workspace/g4-slc6/COMPILER/gcc49/LABEL/slc6/THREAD/Seq/release/RelWithDebInfo/geant4-10-03-patches_branch/build/data/G4NDL4.5
+NeutronHP: /Capture file for Z = 6, A = 12 is not found and NeutronHP will use /mnt/build/jenkins/workspace/g4-slc6/COMPILER/gcc49/LABEL/slc6/THREAD/Seq/release/RelWithDebInfo/geant4-10-03-patches_branch/build/data/G4NDL4.5/Capture/CrossSection/6_nat_Carbon
+NeutronHP: /Elastic file for Z = 6, A = 12 is not found and NeutronHP will use /mnt/build/jenkins/workspace/g4-slc6/COMPILER/gcc49/LABEL/slc6/THREAD/Seq/release/RelWithDebInfo/geant4-10-03-patches_branch/build/data/G4NDL4.5/Elastic/CrossSection/6_nat_Carbon
+NeutronHP: /Inelastic file for Z = 6, A = 12 is not found and NeutronHP will use /mnt/build/jenkins/workspace/g4-slc6/COMPILER/gcc49/LABEL/slc6/THREAD/Seq/release/RelWithDebInfo/geant4-10-03-patches_branch/build/data/G4NDL4.5/Inelastic/CrossSection/6_nat_Carbon
+NeutronHP: /Capture file for Z = 6, A = 13 is not found and NeutronHP will use /mnt/build/jenkins/workspace/g4-slc6/COMPILER/gcc49/LABEL/slc6/THREAD/Seq/release/RelWithDebInfo/geant4-10-03-patches_branch/build/data/G4NDL4.5/Capture/CrossSection/6_nat_Carbon
+NeutronHP: /Elastic file for Z = 6, A = 13 is not found and NeutronHP will use /mnt/build/jenkins/workspace/g4-slc6/COMPILER/gcc49/LABEL/slc6/THREAD/Seq/release/RelWithDebInfo/geant4-10-03-patches_branch/build/data/G4NDL4.5/Elastic/CrossSection/6_nat_Carbon
+NeutronHP: /Inelastic file for Z = 6, A = 13 is not found and NeutronHP will use /mnt/build/jenkins/workspace/g4-slc6/COMPILER/gcc49/LABEL/slc6/THREAD/Seq/release/RelWithDebInfo/geant4-10-03-patches_branch/build/data/G4NDL4.5/Inelastic/CrossSection/6_nat_Carbon
+NeutronHP: /Capture file for Z = 8, A = 18 is not found and NeutronHP will use /mnt/build/jenkins/workspace/g4-slc6/COMPILER/gcc49/LABEL/slc6/THREAD/Seq/release/RelWithDebInfo/geant4-10-03-patches_branch/build/data/G4NDL4.5/Capture/CrossSection/8_17_Oxygen
+NeutronHP: /Elastic file for Z = 8, A = 18 is not found and NeutronHP will use /mnt/build/jenkins/workspace/g4-slc6/COMPILER/gcc49/LABEL/slc6/THREAD/Seq/release/RelWithDebInfo/geant4-10-03-patches_branch/build/data/G4NDL4.5/Elastic/CrossSection/8_17_Oxygen
+NeutronHP: /Inelastic file for Z = 8, A = 18 is not found and NeutronHP will use /mnt/build/jenkins/workspace/g4-slc6/COMPILER/gcc49/LABEL/slc6/THREAD/Seq/release/RelWithDebInfo/geant4-10-03-patches_branch/build/data/G4NDL4.5/Inelastic/CrossSection/8_17_Oxygen
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Current available graphics systems are:
+ASCIITree (ATree)
+DAWNFILE (DAWNFILE)
+G4HepRep (HepRepXML)
+G4HepRepFile (HepRepFile)
+RayTracer (RayTracer)
+VRML1FILE (VRML1FILE)
+VRML2FILE (VRML2FILE)
+gMocrenFile (gMocrenFile)
+OpenGLImmediateQt (OGLIQt, OGLI)
+OpenGLStoredQt (OGLSQt, OGL, OGLS)
+OpenGLImmediateXm (OGLIXm, OGLIQt_FALLBACK)
+OpenGLStoredXm (OGLSXm, OGLSQt_FALLBACK)
+OpenGLImmediateX (OGLIX, OGLIQt_FALLBACK, OGLIXm_FALLBACK)
+OpenGLStoredX (OGLSX, OGLSQt_FALLBACK, OGLSXm_FALLBACK)
+RayTracerX (RayTracerX)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByAttribute
+  drawByCharge
+  drawByOriginVolume
+  drawByParticleID
+  drawByEncounteredVolume
+
+Registered filter factories:
+  attributeFilter
+  chargeFilter
+  originVolumeFilter
+  particleFilter
+  encounteredVolumeFilter
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+Available colours:
+  black, blue, brown, cyan, gray, green, grey, magenta, red, white, yellow
+
+
+phot:   for  gamma    SubType= 12  BuildTable= 0
+      LambdaPrime table from 200 keV to 100 TeV in 61 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       PhotoElectric :  Emin=        0 eV    Emax=      100 TeV   AngularGenSauterGavrila  FluoActive
+
+compt:   for  gamma    SubType= 13  BuildTable= 1
+      Lambda table from 100 eV  to 1 MeV, 7 bins per decade, spline: 1
+      LambdaPrime table from 1 MeV to 100 TeV in 56 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       Klein-Nishina :  Emin=        0 eV    Emax=      100 TeV
+
+conv:   for  gamma    SubType= 14  BuildTable= 1
+      Lambda table from 1.022 MeV to 100 TeV, 18 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        BetheHeitler :  Emin=        0 eV    Emax=       80 GeV
+     BetheHeitlerLPM :  Emin=       80 GeV   Emax=      100 TeV
+
+msc:   for e-    SubType= 10
+      RangeFactor= 0.04, stepLimitType: 1, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc :  Emin=        0 eV    Emax=      100 MeV  Table with 42 bins Emin=    100 eV    Emax=    100 MeV
+        WentzelVIUni :  Emin=      100 MeV   Emax=      100 TeV  Table with 42 bins Emin=    100 MeV   Emax=    100 TeV
+
+eIoni:   for  e-    SubType= 2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :  Emin=        0 eV    Emax=      100 TeV
+
+eBrem:   for  e-    SubType= 3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      LPM flag: 1 for E > 1 GeV,  VertexHighEnergyTh(GeV)= 100000
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB :  Emin=        0 eV    Emax=        1 GeV   DipBustGen
+            eBremLPM :  Emin=        1 GeV   Emax=      100 TeV   DipBustGen
+
+CoulombScat:   for  e-, integral: 1     SubType= 1  BuildTable= 1
+      Lambda table from 100 MeV to 100 TeV, 7 bins per decade, spline: 1
+      180 < Theta(degree) < 180 pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=      100 MeV   Emax=      100 TeV
+
+msc:   for e+    SubType= 10
+      RangeFactor= 0.04, stepLimitType: 1, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc :  Emin=        0 eV    Emax=      100 MeV  Table with 42 bins Emin=    100 eV    Emax=    100 MeV
+        WentzelVIUni :  Emin=      100 MeV   Emax=      100 TeV  Table with 42 bins Emin=    100 MeV   Emax=    100 TeV
+
+eIoni:   for  e+    SubType= 2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :  Emin=        0 eV    Emax=      100 TeV
+
+eBrem:   for  e+    SubType= 3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      LPM flag: 1 for E > 1 GeV,  VertexHighEnergyTh(GeV)= 100000
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB :  Emin=        0 eV    Emax=        1 GeV   DipBustGen
+            eBremLPM :  Emin=        1 GeV   Emax=      100 TeV   DipBustGen
+
+annihil:   for  e+, integral: 1     SubType= 5  BuildTable= 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            eplus2gg :  Emin=        0 eV    Emax=      100 TeV
+
+CoulombScat:   for  e+, integral: 1     SubType= 1  BuildTable= 1
+      Lambda table from 100 MeV to 100 TeV, 7 bins per decade, spline: 1
+      180 < Theta(degree) < 180 pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=      100 MeV   Emax=      100 TeV
+
+msc:   for proton    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 0, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=      100 TeV  Table with 84 bins Emin=    100 eV    Emax=    100 TeV
+
+hIoni:   for  proton    SubType= 2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=      100 TeV
+
+hBrems:   for  proton    SubType= 3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=      100 TeV
+
+hPairProd:   for  proton    SubType= 4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      Sampling table 17x1001 from 7.50618 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=      100 TeV
+
+CoulombScat:   for  proton, integral: 1     SubType= 1  BuildTable= 1
+      Used Lambda table of anti_proton
+      180 < Theta(degree) < 180 pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=        0 eV    Emax=      100 TeV
+
+msc:   for GenericIon    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc :  Emin=        0 eV    Emax=      100 TeV
+
+ionIoni:   for  GenericIon    SubType= 2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.02
+      Stopping Power data for 17 ion/material pairs 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=      100 TeV
+
+msc:   for alpha    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc :  Emin=        0 eV    Emax=      100 TeV  Table with 84 bins Emin=    100 eV    Emax=    100 TeV
+
+ionIoni:   for  alpha    SubType= 2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.02
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon :  Emin=        0 eV    Emax=   7.9452 MeV
+          BetheBloch :  Emin=   7.9452 MeV   Emax=      100 TeV
+
+msc:   for anti_proton    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 0, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=      100 TeV  Table with 84 bins Emin=    100 eV    Emax=    100 TeV
+
+hIoni:   for  anti_proton    SubType= 2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=      100 TeV
+
+hBrems:   for  anti_proton    SubType= 3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=      100 TeV
+
+hPairProd:   for  anti_proton    SubType= 4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      Sampling table 17x1001 from 7.50618 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=      100 TeV
+
+CoulombScat:   for  anti_proton, integral: 1     SubType= 1  BuildTable= 1
+      Lambda table from threshold  to 100 TeV, 7 bins per decade, spline: 1
+      180 < Theta(degree) < 180 pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=        0 eV    Emax=      100 TeV
+
+msc:   for kaon+    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 0, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=      100 TeV  Table with 84 bins Emin=    100 eV    Emax=    100 TeV
+
+hIoni:   for  kaon+    SubType= 2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=  1.05231 MeV
+          BetheBloch :  Emin=  1.05231 MeV   Emax=      100 TeV
+
+hBrems:   for  kaon+    SubType= 3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=      100 TeV
+
+hPairProd:   for  kaon+    SubType= 4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      Sampling table 18x1001 from 3.94942 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=      100 TeV
+
+CoulombScat:   for  kaon+, integral: 1     SubType= 1  BuildTable= 1
+      Lambda table from threshold  to 100 TeV, 7 bins per decade, spline: 1
+      180 < Theta(degree) < 180 pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=        0 eV    Emax=      100 TeV
+
+msc:   for kaon-    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 0, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=      100 TeV  Table with 84 bins Emin=    100 eV    Emax=    100 TeV
+
+hIoni:   for  kaon-    SubType= 2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=  1.05231 MeV
+          BetheBloch :  Emin=  1.05231 MeV   Emax=      100 TeV
+
+hBrems:   for  kaon-    SubType= 3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=      100 TeV
+
+hPairProd:   for  kaon-    SubType= 4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      Sampling table 18x1001 from 3.94942 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=      100 TeV
+
+CoulombScat:   for  kaon-, integral: 1     SubType= 1  BuildTable= 1
+      Used Lambda table of kaon+
+      180 < Theta(degree) < 180 pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=        0 eV    Emax=      100 TeV
+
+msc:   for mu+    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 0, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=      100 TeV  Table with 84 bins Emin=    100 eV    Emax=    100 TeV
+
+muIoni:   for  mu+    SubType= 2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=      200 keV
+          BetheBloch :  Emin=      200 keV   Emax=        1 GeV
+        MuBetheBloch :  Emin=        1 GeV   Emax=      100 TeV
+
+muBrems:   for  mu+    SubType= 3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem :  Emin=        0 eV    Emax=      100 TeV
+
+muPairProd:   for  mu+    SubType= 4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      Sampling table 21x1001 from 1 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd :  Emin=        0 eV    Emax=      100 TeV
+
+CoulombScat:   for  mu+, integral: 1     SubType= 1  BuildTable= 1
+      Lambda table from threshold  to 100 TeV, 7 bins per decade, spline: 1
+      180 < Theta(degree) < 180 pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=        0 eV    Emax=      100 TeV
+
+msc:   for mu-    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 0, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=      100 TeV  Table with 84 bins Emin=    100 eV    Emax=    100 TeV
+
+muIoni:   for  mu-    SubType= 2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=      200 keV
+          BetheBloch :  Emin=      200 keV   Emax=        1 GeV
+        MuBetheBloch :  Emin=        1 GeV   Emax=      100 TeV
+
+muBrems:   for  mu-    SubType= 3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem :  Emin=        0 eV    Emax=      100 TeV
+
+muPairProd:   for  mu-    SubType= 4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      Sampling table 21x1001 from 1 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd :  Emin=        0 eV    Emax=      100 TeV
+
+CoulombScat:   for  mu-, integral: 1     SubType= 1  BuildTable= 1
+      Used Lambda table of mu+
+      180 < Theta(degree) < 180 pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=        0 eV    Emax=      100 TeV
+NeutronHP: /Capture file for Z = 6, A = 12 is not found and NeutronHP will use /mnt/build/jenkins/workspace/g4-slc6/COMPILER/gcc49/LABEL/slc6/THREAD/Seq/release/RelWithDebInfo/geant4-10-03-patches_branch/build/data/G4NDL4.5/Capture/CrossSection/6_nat_Carbon
+NeutronHP: /Elastic file for Z = 6, A = 12 is not found and NeutronHP will use /mnt/build/jenkins/workspace/g4-slc6/COMPILER/gcc49/LABEL/slc6/THREAD/Seq/release/RelWithDebInfo/geant4-10-03-patches_branch/build/data/G4NDL4.5/Elastic/CrossSection/6_nat_Carbon
+NeutronHP: /Inelastic file for Z = 6, A = 12 is not found and NeutronHP will use /mnt/build/jenkins/workspace/g4-slc6/COMPILER/gcc49/LABEL/slc6/THREAD/Seq/release/RelWithDebInfo/geant4-10-03-patches_branch/build/data/G4NDL4.5/Inelastic/CrossSection/6_nat_Carbon
+NeutronHP: /Capture file for Z = 6, A = 13 is not found and NeutronHP will use /mnt/build/jenkins/workspace/g4-slc6/COMPILER/gcc49/LABEL/slc6/THREAD/Seq/release/RelWithDebInfo/geant4-10-03-patches_branch/build/data/G4NDL4.5/Capture/CrossSection/6_nat_Carbon
+NeutronHP: /Elastic file for Z = 6, A = 13 is not found and NeutronHP will use /mnt/build/jenkins/workspace/g4-slc6/COMPILER/gcc49/LABEL/slc6/THREAD/Seq/release/RelWithDebInfo/geant4-10-03-patches_branch/build/data/G4NDL4.5/Elastic/CrossSection/6_nat_Carbon
+NeutronHP: /Inelastic file for Z = 6, A = 13 is not found and NeutronHP will use /mnt/build/jenkins/workspace/g4-slc6/COMPILER/gcc49/LABEL/slc6/THREAD/Seq/release/RelWithDebInfo/geant4-10-03-patches_branch/build/data/G4NDL4.5/Inelastic/CrossSection/6_nat_Carbon
+NeutronHP: /Capture file for Z = 8, A = 18 is not found and NeutronHP will use /mnt/build/jenkins/workspace/g4-slc6/COMPILER/gcc49/LABEL/slc6/THREAD/Seq/release/RelWithDebInfo/geant4-10-03-patches_branch/build/data/G4NDL4.5/Capture/CrossSection/8_17_Oxygen
+NeutronHP: /Elastic file for Z = 8, A = 18 is not found and NeutronHP will use /mnt/build/jenkins/workspace/g4-slc6/COMPILER/gcc49/LABEL/slc6/THREAD/Seq/release/RelWithDebInfo/geant4-10-03-patches_branch/build/data/G4NDL4.5/Elastic/CrossSection/8_17_Oxygen
+NeutronHP: /Inelastic file for Z = 8, A = 18 is not found and NeutronHP will use /mnt/build/jenkins/workspace/g4-slc6/COMPILER/gcc49/LABEL/slc6/THREAD/Seq/release/RelWithDebInfo/geant4-10-03-patches_branch/build/data/G4NDL4.5/Inelastic/CrossSection/8_17_Oxygen
+NeutronHP: /Elastic file for Z = 6, A = 12 is not found and NeutronHP will use /mnt/build/jenkins/workspace/g4-slc6/COMPILER/gcc49/LABEL/slc6/THREAD/Seq/release/RelWithDebInfo/geant4-10-03-patches_branch/build/data/G4NDL4.5/Elastic/CrossSection/6_nat_Carbon
+NeutronHP: /Elastic file for Z = 6, A = 13 is not found and NeutronHP will use /mnt/build/jenkins/workspace/g4-slc6/COMPILER/gcc49/LABEL/slc6/THREAD/Seq/release/RelWithDebInfo/geant4-10-03-patches_branch/build/data/G4NDL4.5/Elastic/CrossSection/6_nat_Carbon
+NeutronHP: /Elastic file for Z = 8, A = 18 is not found and NeutronHP will use /mnt/build/jenkins/workspace/g4-slc6/COMPILER/gcc49/LABEL/slc6/THREAD/Seq/release/RelWithDebInfo/geant4-10-03-patches_branch/build/data/G4NDL4.5/Elastic/CrossSection/8_17_Oxygen
+@@@ G4ParticleHPInelastic instantiated for particle neutron data directory variable is G4NEUTRONHPDATA pointing to /mnt/build/jenkins/workspace/g4-slc6/COMPILER/gcc49/LABEL/slc6/THREAD/Seq/release/RelWithDebInfo/geant4-10-03-patches_branch/build/data/G4NDL4.5/Inelastic
+NeutronHP: /Capture file for Z = 6, A = 12 is not found and NeutronHP will use /mnt/build/jenkins/workspace/g4-slc6/COMPILER/gcc49/LABEL/slc6/THREAD/Seq/release/RelWithDebInfo/geant4-10-03-patches_branch/build/data/G4NDL4.5/Capture/CrossSection/6_nat_Carbon
+NeutronHP: /Capture file for Z = 6, A = 13 is not found and NeutronHP will use /mnt/build/jenkins/workspace/g4-slc6/COMPILER/gcc49/LABEL/slc6/THREAD/Seq/release/RelWithDebInfo/geant4-10-03-patches_branch/build/data/G4NDL4.5/Capture/CrossSection/6_nat_Carbon
+NeutronHP: /Capture file for Z = 8, A = 18 is not found and NeutronHP will use /mnt/build/jenkins/workspace/g4-slc6/COMPILER/gcc49/LABEL/slc6/THREAD/Seq/release/RelWithDebInfo/geant4-10-03-patches_branch/build/data/G4NDL4.5/Capture/CrossSection/8_17_Oxygen
+Fission fragment production is now activated in HP package for Z = 92, A = 235
+As currently modeled this option precludes production of delayed neutrons from fission fragments.
+Fission fragment production is now activated in HP package for Z = 92, A = 238
+As currently modeled this option precludes production of delayed neutrons from fission fragments.
+
+msc:   for pi+    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 0, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=      100 TeV  Table with 84 bins Emin=    100 eV    Emax=    100 TeV
+
+hIoni:   for  pi+    SubType= 2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=  297.505 keV
+          BetheBloch :  Emin=  297.505 keV   Emax=      100 TeV
+
+hBrems:   for  pi+    SubType= 3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=      100 TeV
+
+hPairProd:   for  pi+    SubType= 4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      Sampling table 20x1001 from 1.11656 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=      100 TeV
+
+CoulombScat:   for  pi+, integral: 1     SubType= 1  BuildTable= 1
+      Lambda table from threshold  to 100 TeV, 7 bins per decade, spline: 1
+      180 < Theta(degree) < 180 pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=        0 eV    Emax=      100 TeV
+
+msc:   for pi-    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 0, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=      100 TeV  Table with 84 bins Emin=    100 eV    Emax=    100 TeV
+
+hIoni:   for  pi-    SubType= 2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=  297.505 keV
+          BetheBloch :  Emin=  297.505 keV   Emax=      100 TeV
+
+hBrems:   for  pi-    SubType= 3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=      100 TeV
+
+hPairProd:   for  pi-    SubType= 4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      Sampling table 20x1001 from 1.11656 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=      100 TeV
+
+CoulombScat:   for  pi-, integral: 1     SubType= 1  BuildTable= 1
+      Used Lambda table of pi+
+      180 < Theta(degree) < 180 pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=        0 eV    Emax=      100 TeV
+
+====================================================================
+                  HADRONIC PROCESSES SUMMARY (verbose level 1)
+
+---------------------------------------------------
+                           Hadronic Processes for GenericIon
+
+  Process: ionInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 4 GeV/n
+        Model:                      FTFP: 2 GeV/n ---> 100 TeV/n
+     Cr_sctns: Glauber-Gribov nucleus nucleus: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for He3
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns: Glauber-Gribov nucleus nucleus: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: He3Inelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 4 GeV/n
+        Model:                      FTFP: 2 GeV/n ---> 100 TeV/n
+     Cr_sctns: Glauber-Gribov nucleus nucleus: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for alpha
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: alphaInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 4 GeV/n
+        Model:                      FTFP: 2 GeV/n ---> 100 TeV/n
+     Cr_sctns: Glauber-Gribov nucleus nucleus: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_He3
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: anti_He3Inelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_alpha
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: anti_alphaInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_deuteron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: anti_deuteronInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_neutron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: anti_neutronInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_proton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100.1 MeV
+        Model:              AntiAElastic: 100 MeV ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: anti_protonInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_triton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: anti_tritonInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for deuteron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: dInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 4 GeV/n
+        Model:                      FTFP: 2 GeV/n ---> 100 TeV/n
+     Cr_sctns: Glauber-Gribov nucleus nucleus: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for e+
+
+  Process: positronNuclear
+        Model:   G4ElectroVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:          ElectroNuclearXS: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for e-
+
+  Process: electronNuclear
+        Model:   G4ElectroVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:          ElectroNuclearXS: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for gamma
+
+  Process: photonNuclear
+        Model:            BertiniCascade: 0 eV  ---> 3.5 GeV
+        Model:           TheoFSGenerator: 3 GeV ---> 100 TeV
+     Cr_sctns:            PhotoNuclearXS: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for kaon+
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: kaon+Inelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 4 GeV ---> 25 GeV
+        Model:            BertiniCascade: 0 eV  ---> 5 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:  ChipsKaonPlusInelasticXS: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for kaon-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: kaon-Inelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 4 GeV ---> 25 GeV
+        Model:            BertiniCascade: 0 eV  ---> 5 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns: ChipsKaonMinusInelasticXS: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hBertiniCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for lambda
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: lambdaInelastic
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+        Model:                      FTFP: 2 GeV ---> 100 TeV
+     Cr_sctns:   ChipsHyperonInelasticXS: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for mu+
+
+  Process: muonNuclear
+        Model:      G4MuonVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:     KokoulinMuonNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for mu-
+
+  Process: muonNuclear
+        Model:      G4MuonVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:     KokoulinMuonNuclearXS: 0 eV  ---> 100 TeV
+
+  Process: muMinusCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for neutron
+
+  Process: hadElastic
+        Model:             hElasticCHIPS: 19.5 MeV ---> 100 TeV
+        Model:          NeutronHPElastic: 0 eV  ---> 20 MeV
+     Cr_sctns:        NeutronHPElasticXS: 0 eV  ---> 20 MeV
+     Cr_sctns:        G4NeutronElasticXS: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: neutronInelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 9.5 GeV ---> 25 GeV
+        Model:            Binary Cascade: 19.9 MeV ---> 9.9 GeV
+        Model:        NeutronHPInelastic: 0 eV  ---> 20 MeV
+     Cr_sctns:      NeutronHPInelasticXS: 0 eV  ---> 20 MeV
+     Cr_sctns:       Barashenkov-Glauber: 0 eV  ---> 100 TeV
+     Cr_sctns:       Barashenkov-Glauber: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: nCapture
+        Model:          NeutronHPCapture: 0 eV  ---> 20 MeV
+        Model:               nRadCapture: 19.9 MeV ---> 100 TeV
+     Cr_sctns:        NeutronHPCaptureXS: 0 eV  ---> 20 MeV
+     Cr_sctns:        G4NeutronCaptureXS: 0 eV  ---> 100 TeV
+     Cr_sctns:        NeutronHPCaptureXS: 0 eV  ---> 20 MeV
+     Cr_sctns:          GheishaCaptureXS: 0 eV  ---> 100 TeV
+
+  Process: nFission
+        Model:          NeutronHPFission: 0 eV  ---> 20 MeV
+        Model:                G4LFission: 19.9 MeV ---> 2.88022e+295 J  
+     Cr_sctns:        NeutronHPFissionXS: 0 eV  ---> 20 MeV
+     Cr_sctns:          GheishaFissionXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for pi+
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 1.0001 GeV
+        Model:           hElasticGlauber: 1 GeV ---> 100 TeV
+     Cr_sctns:       Barashenkov-Glauber: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: pi+Inelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 4 GeV ---> 25 GeV
+        Model:            BertiniCascade: 0 eV  ---> 5 GeV
+     Cr_sctns:      G4CrossSectionPairGG: 0 eV  ---> 100 TeV
+                         G4CrossSectionPairGG: G4PiNuclearCrossSection cross sections 
+                           below 91 GeV, Glauber-Gribov above 
+     Cr_sctns:      G4CrossSectionPairGG: 0 eV  ---> 100 TeV
+                         G4CrossSectionPairGG: G4PiNuclearCrossSection cross sections 
+                           below 91 GeV, Glauber-Gribov above 
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for pi-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 1.0001 GeV
+        Model:           hElasticGlauber: 1 GeV ---> 100 TeV
+     Cr_sctns:       Barashenkov-Glauber: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: pi-Inelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 4 GeV ---> 25 GeV
+        Model:            BertiniCascade: 0 eV  ---> 5 GeV
+     Cr_sctns:      G4CrossSectionPairGG: 0 eV  ---> 100 TeV
+                         G4CrossSectionPairGG: G4PiNuclearCrossSection cross sections 
+                           below 91 GeV, Glauber-Gribov above 
+     Cr_sctns:      G4CrossSectionPairGG: 0 eV  ---> 100 TeV
+                         G4CrossSectionPairGG: G4PiNuclearCrossSection cross sections 
+                           below 91 GeV, Glauber-Gribov above 
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hBertiniCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for proton
+
+  Process: hadElastic
+        Model:             hElasticCHIPS: 0 eV  ---> 100 TeV
+     Cr_sctns:      ChipsProtonElasticXS: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: protonInelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 9.5 GeV ---> 25 GeV
+        Model:            Binary Cascade: 0 eV  ---> 9.9 GeV
+     Cr_sctns:       Barashenkov-Glauber: 0 eV  ---> 100 TeV
+     Cr_sctns:       Barashenkov-Glauber: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for triton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: tInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 4 GeV/n
+        Model:                      FTFP: 2 GeV/n ---> 100 TeV/n
+     Cr_sctns: Glauber-Gribov nucleus nucleus: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+================================================================
+=======================================================================
+======       Pre-compound/De-excitation Physics Parameters     ========
+=======================================================================
+Type of pre-compound inverse x-section              3
+Type of de-excitation inverse x-section             3
+Min excitation energy (keV)                         0.01
+Level density (1/MeV)                               0.1
+Time limit for long lived isomeres (ns)             1e+12
+Use new data files                                  1
+Use complete data files                             0
+Correlated gamma emission flag                      0
+=======================================================================
+Number of de-excitation channels                    8
+Shooting event 1
+Emission Location: r: (3.9412,0,444.628)
+Emission Direction: r: (-0.720729,0.12139,-0.682506)
+Shooting event 2
+Emission Location: r: (2.32506,0,468.379)
+Emission Direction: r: (-0.339043,0.785774,0.517309)
+Shooting event 3
+Emission Location: r: (1.17891,0,472.142)
+Emission Direction: r: (0.569888,-0.782916,-0.24954)
+Shooting event 4
+Emission Location: r: (1.31679,0,483.086)
+Emission Direction: r: (0.0122917,-0.630903,-0.775764)
+Shooting event 5
+Emission Location: r: (1.10622,0,446.493)
+Emission Direction: r: (0.90715,0.0400566,-0.418896)
+Shooting event 6
+Emission Location: r: (0.769776,0,460.683)
+Emission Direction: r: (-0.4325,0.301969,0.849564)
+Shooting event 7
+Emission Location: r: (3.80384,0,471.407)
+Emission Direction: r: (-0.31469,0.501376,-0.805973)
+Shooting event 8
+Emission Location: r: (4.88674,0,477.825)
+Emission Direction: r: (0.614994,-0.726793,0.305866)
+Shooting event 9
+Emission Location: r: (0.211088,0,454.605)
+Emission Direction: r: (-0.629725,-0.743938,0.223613)
+Shooting event 10
+Emission Location: r: (0.33636,0,468.238)
+Emission Direction: r: (-0.165079,0.670094,-0.723687)
+Shooting event 11
+Emission Location: r: (2.71449,0,475.779)
+Emission Direction: r: (-0.673103,0.0375253,0.738596)
+Shooting event 12
+Emission Location: r: (2.15893,0,470.65)
+Emission Direction: r: (0.645764,0.30828,0.698535)
+Shooting event 13
+Emission Location: r: (1.84972,0,479.821)
+Emission Direction: r: (-0.621273,0.78358,-0.00466261)
+Shooting event 14
+Emission Location: r: (1.16598,0,462.135)
+Emission Direction: r: (0.815509,-0.512497,-0.268874)
+Shooting event 15
+Emission Location: r: (3.41455,0,449.341)
+Emission Direction: r: (0.884499,0.204137,0.419512)
+Shooting event 16
+Emission Location: r: (0.212369,0,451.93)
+Emission Direction: r: (-0.89801,-0.437829,-0.0434013)
+Shooting event 17
+Emission Location: r: (5.01586,0,444.396)
+Emission Direction: r: (-0.901834,0.308143,0.302891)
+Shooting event 18
+Emission Location: r: (2.40594,0,452.769)
+Emission Direction: r: (-0.227717,-0.81765,0.528767)
+Shooting event 19
+Emission Location: r: (1.14739,0,440.901)
+Emission Direction: r: (0.852854,0.510356,0.110345)
+Shooting event 20
+Emission Location: r: (3.33492,0,475.911)
+Emission Direction: r: (0.347729,0.741262,0.574121)
+Shooting event 21
+Emission Location: r: (0.576746,0,440.797)
+Emission Direction: r: (-0.886853,0.44473,0.125326)
+Shooting event 22
+Emission Location: r: (1.06685,0,457.461)
+Emission Direction: r: (-0.196494,0.223921,0.954594)
+Shooting event 23
+Emission Location: r: (0.32977,0,436.189)
+Emission Direction: r: (0.75853,0.319334,-0.568029)
+Shooting event 24
+Emission Location: r: (1.25704,0,458.157)
+Emission Direction: r: (0.71684,0.506914,-0.478726)
+Shooting event 25
+Emission Location: r: (2.94085,0,445.202)
+Emission Direction: r: (0.699887,0.606932,-0.376553)
+Shooting event 26
+Emission Location: r: (0.125303,0,447.924)
+Emission Direction: r: (0.301138,0.660348,-0.687937)
+Shooting event 27
+Emission Location: r: (2.8517,0,485.089)
+Emission Direction: r: (-0.288071,-0.675261,0.678998)
+Shooting event 28
+Emission Location: r: (3.23177,0,482.886)
+Emission Direction: r: (-0.312535,0.670385,-0.672983)
+Shooting event 29
+Emission Location: r: (3.81463,0,468.503)
+Emission Direction: r: (0.137913,-0.627364,0.766417)
+Shooting event 30
+Emission Location: r: (0.318205,0,464.797)
+Emission Direction: r: (0.165894,0.405224,-0.89904)
+Shooting event 31
+Emission Location: r: (0.168354,0,450.2)
+Emission Direction: r: (-0.354545,0.917372,0.180907)
+Shooting event 32
+Emission Location: r: (0.773013,0,444.452)
+Emission Direction: r: (-0.485164,-0.223718,-0.84532)
+Shooting event 33
+Emission Location: r: (0.26109,0,479.681)
+Emission Direction: r: (0.980115,0.172616,0.0978696)
+Shooting event 34
+Emission Location: r: (1.43462,0,441.172)
+Emission Direction: r: (-0.879989,0.229043,0.416123)
+Shooting event 35
+Emission Location: r: (2.26305,0,481.67)
+Emission Direction: r: (-0.928631,0.265044,0.259608)
+Shooting event 36
+Emission Location: r: (3.53921,0,446.818)
+Emission Direction: r: (-0.259294,0.962012,0.0854385)
+Shooting event 37
+Emission Location: r: (1.29206,0,455.091)
+Emission Direction: r: (-0.241152,-0.603693,-0.759869)
+Shooting event 38
+Emission Location: r: (1.90703,0,447.414)
+Emission Direction: r: (-0.732973,0.640182,-0.230039)
+Shooting event 39
+Emission Location: r: (2.16099,0,438.604)
+Emission Direction: r: (0.12116,-0.957893,-0.260308)
+Shooting event 40
+Emission Location: r: (1.90531,0,442.448)
+Emission Direction: r: (0.4023,0.35948,0.841979)
+Shooting event 41
+Emission Location: r: (4.03937,0,477.234)
+Emission Direction: r: (-0.246856,0.934877,-0.255082)
+Shooting event 42
+Emission Location: r: (4.2374,0,466.076)
+Emission Direction: r: (0.577592,0.710553,-0.401874)
+Shooting event 43
+Emission Location: r: (2.54622,0,467.986)
+Emission Direction: r: (0.920147,0.319846,0.225895)
+Shooting event 44
+Emission Location: r: (0.855388,0,476.465)
+Emission Direction: r: (-0.588883,0.691393,0.418561)
+Shooting event 45
+Emission Location: r: (3.88863,0,474.985)
+Emission Direction: r: (0.0576237,0.10244,0.993069)
+Shooting event 46
+Emission Location: r: (0.925341,0,476.491)
+Emission Direction: r: (0.110302,0.522493,0.845479)
+Shooting event 47
+Emission Location: r: (4.68512,0,451.277)
+Emission Direction: r: (-0.377241,-0.076416,0.922957)
+Shooting event 48
+Emission Location: r: (2.68075,0,441.912)
+Emission Direction: r: (-0.195557,-0.962163,-0.189736)
+Shooting event 49
+Emission Location: r: (2.82613,0,482.304)
+Emission Direction: r: (-0.511792,-0.330495,0.792995)
+Shooting event 50
+Emission Location: r: (2.29708,0,464.345)
+Emission Direction: r: (0.869133,-0.484739,-0.0981645)
+Graphics systems deleted.
+Visualization Manager deleting...
