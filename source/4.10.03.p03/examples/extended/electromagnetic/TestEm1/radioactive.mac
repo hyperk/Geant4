@@ -1,0 +1,31 @@
+# $Id: radioactive.mac,v 1.12 2009-09-15 12:51:49 maire Exp $
+#
+# Macro file for "TestEm1.cc"
+#
+/control/verbose 2
+/run/verbose 2
+#
+/testem/det/setMat G4_SODIUM_IODINE
+/testem/det/setSize 1 m
+#
+/testem/phys/addPhysics  local
+#
+/run/initialize
+#
+/process/em/fluo true
+/process/em/auger true
+#
+/testem/gun/setDefault
+/gun/particle ion
+/gun/ion 11 22
+/gun/energy 0 eV
+/gun/position 0 0 0 mm
+#
+###/grdm/nucleusLimits 210 210 82 82
+#
+/analysis/setFileName rdecay
+/analysis/h1/set 4 100 0 3 MeV	#total edep
+#	 
+/run/printProgress 10000
+#
+/run/beamOn 100000

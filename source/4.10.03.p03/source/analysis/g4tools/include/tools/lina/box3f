@@ -1,0 +1,37 @@
+// Copyright (C) 2010, Guy Barrand. All rights reserved.
+// See the file tools.license for terms.
+
+#ifndef tools_box3f
+#define tools_box3f
+
+#include "box3"
+#include "vec3f"
+#include <cfloat> //FLT_MAX
+
+namespace tools {
+
+class box3f : public box3<vec3f> {
+  typedef box3<vec3f> parent;
+  static float num_max() {return FLT_MAX;}
+public:
+  box3f():parent(){make_empty();}
+  virtual ~box3f() {}
+public:
+  box3f(const box3f& a_from):parent(a_from){}
+  box3f& operator=(const box3f& a_from){
+    parent::operator=(a_from);
+    return *this;
+  }
+public:
+  void make_empty(){
+    m_min.set_value( num_max(),  num_max(),  num_max());
+    m_max.set_value(-num_max(), -num_max(), -num_max());
+  }
+  bool get_cube_size(float& a_dx,float& a_dy,float& a_dz) const {
+    return parent::get_cube_size(a_dx,a_dy,a_dz,::sqrtf);
+  }
+};
+
+}
+
+#endif

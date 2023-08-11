@@ -1,0 +1,499 @@
+
+        ############################################
+        !!! WARNING - FPE detection is activated !!!
+        ############################################
+
+*************************************************************
+ Geant4 version Name: geant4-10-03-patch-03    (20-October-2017)
+                      Copyright : Geant4 Collaboration
+                      Reference : NIM A 506 (2003), 250-303
+                            WWW : http://cern.ch/geant4
+*************************************************************
+
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Current available graphics systems are:
+ASCIITree (ATree)
+DAWNFILE (DAWNFILE)
+G4HepRep (HepRepXML)
+G4HepRepFile (HepRepFile)
+RayTracer (RayTracer)
+VRML1FILE (VRML1FILE)
+VRML2FILE (VRML2FILE)
+gMocrenFile (gMocrenFile)
+OpenGLImmediateQt (OGLIQt, OGLI)
+OpenGLStoredQt (OGLSQt, OGL, OGLS)
+OpenGLImmediateXm (OGLIXm, OGLIQt_FALLBACK)
+OpenGLStoredXm (OGLSXm, OGLSQt_FALLBACK)
+OpenGLImmediateX (OGLIX, OGLIQt_FALLBACK, OGLIXm_FALLBACK)
+OpenGLStoredX (OGLSX, OGLSQt_FALLBACK, OGLSXm_FALLBACK)
+RayTracerX (RayTracerX)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByAttribute
+  drawByCharge
+  drawByOriginVolume
+  drawByParticleID
+  drawByEncounteredVolume
+
+Registered filter factories:
+  attributeFilter
+  chargeFilter
+  originVolumeFilter
+  particleFilter
+  encounteredVolumeFilter
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+Available colours:
+  black, blue, brown, cyan, gray, green, grey, magenta, red, white, yellow
+
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 1 region:
+          DefaultRegionForTheWorld  1  1  0
+### ===  Auger cascade flag: 1
+### ===  Ignore cuts flag:   1
+
+phot:   for  gamma    SubType= 12  BuildTable= 0
+      LambdaPrime table from 200 keV to 100 TeV in 61 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+ LivermorePhElectric :  Emin=        0 eV    Emax=        1 GeV   AngularGenSauterGavrila  FluoActive
+       PhotoElectric :  Emin=        1 GeV   Emax=      100 TeV   AngularGenSauterGavrila  FluoActive
+
+compt:   for  gamma    SubType= 13  BuildTable= 1
+      Lambda table from 100 eV  to 1 MeV, 7 bins per decade, spline: 1
+      LambdaPrime table from 1 MeV to 100 TeV in 56 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+    LivermoreCompton :  Emin=        0 eV    Emax=        1 GeV  FluoActive
+       Klein-Nishina :  Emin=        1 GeV   Emax=      100 TeV
+
+conv:   for  gamma    SubType= 14  BuildTable= 1
+      Lambda table from 1.022 MeV to 100 TeV, 18 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+ LivermoreConversion :  Emin=        0 eV    Emax=        1 GeV
+        BetheHeitler :  Emin=        1 GeV   Emax=       80 GeV
+     BetheHeitlerLPM :  Emin=       80 GeV   Emax=      100 TeV
+
+Rayl:   for  gamma    SubType= 11  BuildTable= 1
+      Lambda table from 100 eV  to 100 keV, 7 bins per decade, spline: 0
+      LambdaPrime table from 100 keV to 100 TeV in 63 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+   LivermoreRayleigh :  Emin=        0 eV    Emax=        1 GeV   CullenGenerator
+   LivermoreRayleigh :  Emin=        1 GeV   Emax=      100 TeV   CullenGenerator
+
+e-_G4DNAElectronSolvation:   for  e-    SubType= 58  BuildTable= 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNAOneStepThermalizationModel :  Emin=        0 eV    Emax=      7.4 eV 
+
+e-_G4DNAElastic:   for  e-    SubType= 51  BuildTable= 0
+ Total cross sections computed from DNAChampionElasticModel model
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNAChampionElasticModel :  Emin=        0 eV    Emax=        1 MeV
+
+e-_G4DNAExcitation:   for  e-    SubType= 52  BuildTable= 0
+ Total cross sections computed from DNABornExcitationModel
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNABornExcitationModel :  Emin=        0 eV    Emax=        1 MeV
+
+e-_G4DNAIonisation:   for  e-    SubType= 53  BuildTable= 0
+ Total cross sections computed from DNABornIonisationModel
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNABornIonisationModel :  Emin=        0 eV    Emax=        1 MeV   deltaBorn  FluoActive
+
+e-_G4DNAVibExcitation:   for  e-    SubType= 54  BuildTable= 0
+ Total cross sections computed from DNASancheExcitationModel
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNASancheExcitationModel :  Emin=        0 eV    Emax=      100 eV 
+
+e-_G4DNAAttachment:   for  e-    SubType= 55  BuildTable= 0
+ Total cross sections computed from DNAMeltonAttachmentModel
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNAMeltonAttachmentModel :  Emin=        0 eV    Emax=       13 eV 
+
+msc:   for e+    SubType= 10
+      RangeFactor= 0.04, stepLimitType: 3, latDisplacement: 1, skin= 1, geomFactor= 2.5
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc :  Emin=        0 eV    Emax=      100 TeV  Table with 84 bins Emin=    100 eV    Emax=    100 TeV
+
+eIoni:   for  e+    SubType= 2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :  Emin=        0 eV    Emax=      100 TeV
+
+eBrem:   for  e+    SubType= 3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      LPM flag: 1 for E > 1 GeV,  VertexHighEnergyTh(GeV)= 100000
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB :  Emin=        0 eV    Emax=        1 GeV   DipBustGen
+            eBremLPM :  Emin=        1 GeV   Emax=      100 TeV   DipBustGen
+
+annihil:   for  e+, integral: 1     SubType= 5  BuildTable= 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            eplus2gg :  Emin=        0 eV    Emax=      100 TeV
+
+proton_G4DNAExcitation:   for  proton    SubType= 52  BuildTable= 0
+ Total cross sections computed from DNAMillerGreenExcitationModel and DNABornExcitationModel models
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNAMillerGreenExcitationModel :  Emin=        0 eV    Emax=      500 keV
+DNABornExcitationModel :  Emin=      500 keV   Emax=      100 MeV
+
+proton_G4DNAIonisation:   for  proton    SubType= 53  BuildTable= 0
+ Total cross sections computed from DNARuddIonisationModel and DNABornIonisationModel models
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNARuddIonisationModel :  Emin=        0 eV    Emax=      500 keV   deltaRudd  FluoActive
+DNABornIonisationModel :  Emin=      500 keV   Emax=      100 MeV   deltaBorn  FluoActive
+
+proton_G4DNAChargeDecrease:   for  proton    SubType= 56  BuildTable= 0
+ Total cross sections computed from DNADingfelderChargeDecreaseModel model
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNADingfelderChargeDecreaseModel :  Emin=        0 eV    Emax=      100 MeV
+
+GenericIon_G4DNAIonisation:   for  GenericIon    SubType= 53  BuildTable= 0
+ Total cross sections computed from DNARuddIonisationExtendedModel
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNARuddIonisationExtendedModel :  Emin=        0 eV    Emax=        1 TeV   deltaRudd  FluoActive
+
+alpha_G4DNAExcitation:   for  alpha    SubType= 52  BuildTable= 0
+ Total cross sections computed from DNAMillerGreenExcitationModel
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNAMillerGreenExcitationModel :  Emin=        0 eV    Emax=      400 MeV
+
+alpha_G4DNAIonisation:   for  alpha    SubType= 53  BuildTable= 0
+ Total cross sections computed from DNARuddIonisationModel
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNARuddIonisationModel :  Emin=        0 eV    Emax=      400 MeV   deltaRudd  FluoActive
+
+alpha_G4DNAChargeDecrease:   for  alpha    SubType= 56  BuildTable= 0
+ Total cross sections computed from DNADingfelderChargeDecreaseModel model
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNADingfelderChargeDecreaseModel :  Emin=        0 eV    Emax=      400 MeV
+Physics stage ends
+Number of chemical species involved in reactions = 6
+Reaction                                    Reaction Rate [dm3/(mol*s)]   Interaction Range for chosen reaction model [nm]
+------------------------------------------------------------------------------------------------------------------------------
+H3O^1 + e_aq^-1 -> H^0                      2.11e+10                      0.200589
+------------------------------------------------------------------------------------------------------------------------------
+H3O^1 + OH^-1 -> No product                 1.43e+11                      1.34973
+------------------------------------------------------------------------------------------------------------------------------
+OH^0 + e_aq^-1 -> OH^-1                     2.95e+10                      0.506256
+------------------------------------------------------------------------------------------------------------------------------
+OH^0 + OH^0 -> H2O2^0                       4.4e+09                       0.207651
+------------------------------------------------------------------------------------------------------------------------------
+OH^0 + H^0 -> No product                    1.44e+10                      0.194167
+------------------------------------------------------------------------------------------------------------------------------
+e_aq^-1 + e_aq^-1 -> OH^-1 + OH^-1 + H_2^0  5e+09                         0.134838
+------------------------------------------------------------------------------------------------------------------------------
+e_aq^-1 + H^0 -> OH^-1 + H_2^0              2.65e+10                      0.294265
+------------------------------------------------------------------------------------------------------------------------------
+e_aq^-1 + H2O2^0 -> OH^-1 + OH^0            1.41e+10                      0.295745
+------------------------------------------------------------------------------------------------------------------------------
+H^0 + H^0 -> H_2^0                          1.2e+10                       0.226528
+------------------------------------------------------------------------------------------------------------------------------
+DNAMolecularStepByStepModel will be used
+*** G4Scheduler starts processing 
+At time :       1 ps Reaction : OH^0 (-1166) + OH^0 (-1304) -> H2O2^0 (-1318)
+At time :       1 ps Reaction : OH^0 (-1211) + OH^0 (-1210) -> H2O2^0 (-1319)
+At time :     1.5 ps Reaction : H^0 (-1217) + OH^0 (-1037) -> No product
+At time :     1.5 ps Reaction : OH^0 (-1151) + H^0 (-1165) -> No product
+At time :     1.5 ps Reaction : OH^0 (-759) + OH^0 (-943) -> H2O2^0 (-1320)
+At time :     1.5 ps Reaction : OH^0 (-739) + OH^0 (-895) -> H2O2^0 (-1321)
+At time :     1.6 ps Reaction : OH^0 (-1275) + OH^0 (-1276) -> H2O2^0 (-1322)
+At time :     2.3 ps Reaction : OH^0 (-1176) + OH^0 (-1177) -> H2O2^0 (-1323)
+At time :     2.9 ps Reaction : OH^0 (-1162) + OH^0 (-1204) -> H2O2^0 (-1324)
+At time :     2.9 ps Reaction : OH^-1 (-659) + H3O^1 (-674) -> No product
+At time :     3.8 ps Reaction : OH^0 (-1154) + OH^0 (-1155) -> H2O2^0 (-1325)
+At time :     4.2 ps Reaction : H^0 (-1163) + OH^0 (-959) -> No product
+At time :  8.7012 ps Reaction : OH^0 (-1174) + OH^0 (-1240) -> H2O2^0 (-1326)
+At time :  8.8012 ps Reaction : e_aq^-1 (-517) + H3O^1 (-746) -> H^0 (-1327)
+At time :   10.29 ps Reaction : OH^0 (-1208) + H^0 (-1161) -> No product
+At time :   12.09 ps Reaction : OH^0 (-1246) + OH^0 (-689) -> H2O2^0 (-1328)
+At time :   19.09 ps Reaction : e_aq^-1 (-408) + H^0 (-1144) -> OH^-1 (-1329) + H_2^0 (-1330)
+At time :   21.09 ps Reaction : H^0 (-1265) + OH^0 (-965) -> No product
+At time :   25.09 ps Reaction : OH^0 (-1243) + OH^0 (-929) -> H2O2^0 (-1331)
+At time :   27.09 ps Reaction : OH^0 (-1303) + OH^0 (-1302) -> H2O2^0 (-1332)
+At time :  45.147 ps Reaction : OH^0 (-1212) + H^0 (-1213) -> No product
+At time :  47.147 ps Reaction : OH^0 (-769) + OH^0 (-771) -> H2O2^0 (-1333)
+At time :  49.147 ps Reaction : OH^0 (-1299) + OH^0 (-1300) -> H2O2^0 (-1334)
+At time :  51.147 ps Reaction : H^0 (-1309) + OH^0 (-1311) -> No product
+At time :  51.147 ps Reaction : e_aq^-1 (-546) + OH^0 (-1114) -> OH^-1 (-1335)
+At time :  53.147 ps Reaction : OH^0 (-795) + OH^0 (-1019) -> H2O2^0 (-1336)
+At time :  62.147 ps Reaction : e_aq^-1 (-610) + OH^0 (-883) -> OH^-1 (-1337)
+At time :  62.147 ps Reaction : H3O^1 (-882) + OH^-1 (-1337) -> No product
+At time :  70.147 ps Reaction : e_aq^-1 (-117) + OH^0 (-1129) -> OH^-1 (-1338)
+At time :  70.147 ps Reaction : OH^-1 (-1338) + H3O^1 (-1130) -> No product
+At time :  71.147 ps Reaction : e_aq^-1 (-388) + OH^0 (-1143) -> OH^-1 (-1339)
+At time :  77.201 ps Reaction : OH^0 (-701) + OH^0 (-911) -> H2O2^0 (-1340)
+At time :  81.201 ps Reaction : OH^0 (-1158) + OH^0 (-1141) -> H2O2^0 (-1341)
+At time :  87.201 ps Reaction : H3O^1 (-756) + OH^-1 (-1339) -> No product
+At time :  92.201 ps Reaction : OH^0 (-1314) + e_aq^-1 (-437) -> OH^-1 (-1342)
+At time :  94.201 ps Reaction : OH^0 (-775) + OH^0 (-969) -> H2O2^0 (-1343)
+At time :   122.2 ps Reaction : e_aq^-1 (-444) + OH^0 (-931) -> OH^-1 (-1344)
+At time :   128.2 ps Reaction : H^0 (-1295) + OH^0 (-1216) -> No product
+At time :   131.2 ps Reaction : OH^0 (-789) + OH^0 (-1023) -> H2O2^0 (-1345)
+At time :   152.2 ps Reaction : OH^0 (-719) + OH^0 (-1081) -> H2O2^0 (-1346)
+At time :   170.2 ps Reaction : H^0 (-1271) + OH^0 (-1145) -> No product
+At time :   182.2 ps Reaction : OH^0 (-967) + OH^0 (-971) -> H2O2^0 (-1347)
+At time :   185.2 ps Reaction : OH^0 (-1183) + OH^0 (-873) -> H2O2^0 (-1348)
+At time :   185.2 ps Reaction : e_aq^-1 (-138) + OH^0 (-1011) -> OH^-1 (-1349)
+At time :   194.2 ps Reaction : H3O^1 (-934) + OH^-1 (-1342) -> No product
+At time :   194.2 ps Reaction : OH^-1 (-1335) + H3O^1 (-1115) -> No product
+At time :   197.2 ps Reaction : OH^0 (-1293) + OH^0 (-1039) -> H2O2^0 (-1350)
+At time :   200.2 ps Reaction : OH^0 (-1222) + OH^0 (-737) -> H2O2^0 (-1351)
+At time :   212.2 ps Reaction : H3O^1 (-828) + OH^-1 (-1344) -> No product
+At time :   212.2 ps Reaction : H^0 (-1286) + OH^0 (-987) -> No product
+At time :   221.2 ps Reaction : OH^0 (-1233) + OH^0 (-1236) -> H2O2^0 (-1352)
+At time :   221.2 ps Reaction : e_aq^-1 (-618) + OH^0 (-879) -> OH^-1 (-1353)
+At time :   295.5 ps Reaction : OH^-1 (-1349) + H3O^1 (-1010) -> No product
+At time :   304.5 ps Reaction : e_aq^-1 (-614) + OH^0 (-1084) -> OH^-1 (-1354)
+At time :   304.5 ps Reaction : e_aq^-1 (-351) + OH^0 (-957) -> OH^-1 (-1355)
+At time :   331.5 ps Reaction : H3O^1 (-956) + OH^-1 (-1355) -> No product
+At time :   331.5 ps Reaction : OH^0 (-765) + OH^0 (-947) -> H2O2^0 (-1356)
+At time :   334.5 ps Reaction : OH^-1 (-1353) + H3O^1 (-738) -> No product
+At time :   334.5 ps Reaction : e_aq^-1 (-394) + OH^0 (-1250) -> OH^-1 (-1357)
+At time :   367.5 ps Reaction : OH^0 (-953) + OH^0 (-1087) -> H2O2^0 (-1358)
+At time :   373.5 ps Reaction : e_aq^-1 (-405) + OH^0 (-757) -> OH^-1 (-1359)
+At time :   388.5 ps Reaction : OH^0 (-1017) + OH^0 (-1035) -> H2O2^0 (-1360)
+At time :   409.5 ps Reaction : OH^-1 (-668) + H3O^1 (-778) -> No product
+At time :   418.5 ps Reaction : OH^0 (-1202) + H^0 (-1248) -> No product
+At time :   421.5 ps Reaction : OH^0 (-1273) + OH^0 (-1264) -> H2O2^0 (-1361)
+At time :   433.5 ps Reaction : H^0 (-1197) + OH^0 (-977) -> No product
+At time :   442.5 ps Reaction : OH^0 (-675) + OH^0 (-743) -> H2O2^0 (-1362)
+At time :   469.5 ps Reaction : OH^0 (-785) + OH^0 (-1013) -> H2O2^0 (-1363)
+At time :   517.5 ps Reaction : OH^0 (-1277) + OH^0 (-777) -> H2O2^0 (-1364)
+At time :   517.5 ps Reaction : H^0 (-1184) + OH^0 (-877) -> No product
+At time :   547.5 ps Reaction : OH^0 (-1245) + OH^0 (-1078) -> H2O2^0 (-1365)
+At time :   565.5 ps Reaction : e_aq^-1 (-359) + OH^0 (-955) -> OH^-1 (-1366)
+At time :   568.5 ps Reaction : OH^0 (-1218) + OH^0 (-1147) -> H2O2^0 (-1367)
+At time :   589.5 ps Reaction : OH^0 (-893) + OH^0 (-1106) -> H2O2^0 (-1368)
+At time :   607.5 ps Reaction : e_aq^-1 (-327) + H3O^1 (-974) -> H^0 (-1369)
+At time :   730.8 ps Reaction : OH^0 (-1164) + H^0 (-1150) -> No product
+At time :   769.8 ps Reaction : H3O^1 (-954) + OH^-1 (-1366) -> No product
+At time :   769.8 ps Reaction : e_aq^-1 (-319) + H3O^1 (-1256) -> H^0 (-1370)
+At time :  779.41 ps Reaction : OH^0 (-1255) + OH^0 (-945) -> H2O2^0 (-1371)
+At time :  788.41 ps Reaction : H^0 (-1159) + OH^0 (-973) -> No product
+At time :  794.41 ps Reaction : H^0 (-1182) + OH^0 (-1179) -> No product
+At time :  797.41 ps Reaction : e_aq^-1 (-398) + H3O^1 (-944) -> H^0 (-1372)
+At time :  830.41 ps Reaction : e_aq^-1 (-468) + OH^0 (-705) -> OH^-1 (-1373)
+At time :  830.41 ps Reaction : H3O^1 (-928) + OH^-1 (-1373) -> No product
+At time :  833.41 ps Reaction : OH^0 (-1294) + H^0 (-1305) -> No product
+At time :  845.41 ps Reaction : OH^0 (-1220) + OH^0 (-1149) -> H2O2^0 (-1374)
+At time :  851.41 ps Reaction : e_aq^-1 (-622) + H3O^1 (-894) -> H^0 (-1375)
+At time :  879.33 ps Reaction : OH^0 (-677) + OH^0 (-875) -> H2O2^0 (-1376)
+At time :  897.33 ps Reaction : OH^0 (-1241) + OH^0 (-921) -> H2O2^0 (-1377)
+At time :  897.33 ps Reaction : e_aq^-1 (-609) + OH^0 (-1108) -> OH^-1 (-1378)
+At time :  906.33 ps Reaction : e_aq^-1 (-250) + H3O^1 (-1048) -> H^0 (-1379)
+At time :  909.33 ps Reaction : OH^0 (-913) + OH^0 (-915) -> H2O2^0 (-1380)
+At time :  947.28 ps Reaction : H3O^1 (-1200) + OH^-1 (-1357) -> No product
+At time :   992.9 ps Reaction : H3O^1 (-884) + OH^-1 (-1354) -> No product
+At time :  1.0819 ns Reaction : H2O2^0 (-1319) + e_aq^-1 (-426) -> OH^-1 (-1381) + OH^0 (-1382)
+At time :  1.0819 ns Reaction : OH^0 (-881) + OH^0 (-1107) -> H2O2^0 (-1383)
+At time :  1.0819 ns Reaction : e_aq^-1 (-152) + OH^0 (-1015) -> OH^-1 (-1384)
+At time :  1.1019 ns Reaction : H3O^1 (-772) + OH^-1 (-1381) -> No product
+At time :  1.1019 ns Reaction : H3O^1 (-1252) + OH^-1 (-665) -> No product
+At time :  1.1419 ns Reaction : H3O^1 (-942) + OH^-1 (-1359) -> No product
+At time :  1.1619 ns Reaction : OH^0 (-1285) + OH^0 (-989) -> H2O2^0 (-1385)
+At time :  1.2319 ns Reaction : OH^0 (-1270) + OH^0 (-1382) -> H2O2^0 (-1386)
+At time :  1.3819 ns Reaction : e_aq^-1 (-598) + e_aq^-1 (-584) -> OH^-1 (-1387) + OH^-1 (-1388) + H_2^0 (-1389)
+At time :  1.4019 ns Reaction : OH^0 (-1031) + H^0 (-1148) -> No product
+At time :  1.4319 ns Reaction : OH^0 (-1194) + OH^0 (-666) -> H2O2^0 (-1390)
+At time :  1.4419 ns Reaction : OH^-1 (-1384) + H3O^1 (-792) -> No product
+At time :  1.4819 ns Reaction : OH^0 (-1232) + H^0 (-1188) -> No product
+At time :  1.5419 ns Reaction : e_aq^-1 (-156) + OH^0 (-1132) -> OH^-1 (-1391)
+At time :  1.8219 ns Reaction : OH^-1 (-1391) + H3O^1 (-1014) -> No product
+At time :  1.8219 ns Reaction : e_aq^-1 (-652) + OH^0 (-1135) -> OH^-1 (-1392)
+At time :  1.8619 ns Reaction : H^0 (-1229) + OH^0 (-1111) -> No product
+At time :  2.0519 ns Reaction : OH^0 (-1190) + H^0 (-1327) -> No product
+At time :  2.0719 ns Reaction : H3O^1 (-680) + OH^-1 (-1329) -> No product
+At time :  2.1019 ns Reaction : OH^0 (-1251) + OH^0 (-949) -> H2O2^0 (-1393)
+At time :  2.1419 ns Reaction : OH^0 (-951) + OH^0 (-975) -> H2O2^0 (-1394)
+At time :  2.2319 ns Reaction : OH^0 (-1181) + OH^0 (-889) -> H2O2^0 (-1395)
+At time :  2.2419 ns Reaction : H^0 (-1169) + OH^0 (-787) -> No product
+At time :  2.4826 ns Reaction : OH^0 (-925) + OH^0 (-927) -> H2O2^0 (-1396)
+At time :  2.5956 ns Reaction : e_aq^-1 (-187) + H3O^1 (-1004) -> H^0 (-1397)
+At time :  2.6056 ns Reaction : e_aq^-1 (-415) + OH^0 (-1123) -> OH^-1 (-1398)
+At time :  2.9506 ns Reaction : H3O^1 (-684) + OH^-1 (-1398) -> No product
+At time :  3.1606 ns Reaction : OH^-1 (-1388) + H3O^1 (-676) -> No product
+At time :  3.2106 ns Reaction : OH^0 (-1180) + e_aq^-1 (-615) -> OH^-1 (-1399)
+At time :  3.4612 ns Reaction : e_aq^-1 (-186) + H3O^1 (-1006) -> H^0 (-1400)
+At time :  3.6338 ns Reaction : e_aq^-1 (-430) + OH^0 (-767) -> OH^-1 (-1401)
+At time :  3.8638 ns Reaction : H3O^1 (-880) + OH^-1 (-1387) -> No product
+At time :  3.9638 ns Reaction : H3O^1 (-1281) + e_aq^-1 (-256) -> H^0 (-1402)
+At time :  4.1362 ns Reaction : e_aq^-1 (-532) + OH^0 (-903) -> OH^-1 (-1403)
+At time :  4.2674 ns Reaction : H^0 (-1284) + OH^0 (-1053) -> No product
+At time :  4.3906 ns Reaction : e_aq^-1 (-244) + OH^0 (-809) -> OH^-1 (-1404)
+At time :  4.5006 ns Reaction : e_aq^-1 (-328) + H3O^1 (-948) -> H^0 (-1405)
+At time :  4.5106 ns Reaction : e_aq^-1 (-402) + e_aq^-1 (-390) -> OH^-1 (-1406) + OH^-1 (-1407) + H_2^0 (-1408)
+At time :  4.5506 ns Reaction : e_aq^-1 (-442) + OH^0 (-935) -> OH^-1 (-1409)
+At time :  4.6406 ns Reaction : e_aq^-1 (-201) + OH^0 (-1009) -> OH^-1 (-1410)
+At time :  4.8406 ns Reaction : e_aq^-1 (-315) + OH^0 (-963) -> OH^-1 (-1411)
+At time :  5.1123 ns Reaction : e_aq^-1 (-159) + H3O^1 (-710) -> H^0 (-1412)
+At time :  5.1823 ns Reaction : e_aq^-1 (-332) + OH^0 (-773) -> OH^-1 (-1413)
+At time :  5.3872 ns Reaction : OH^-1 (-1409) + H3O^1 (-826) -> No product
+At time :  5.4587 ns Reaction : e_aq^-1 (-593) + OH^0 (-731) -> OH^-1 (-1414)
+At time :  5.4987 ns Reaction : H3O^1 (-1272) + OH^-1 (-1413) -> No product
+At time :  5.5488 ns Reaction : e_aq^-1 (-513) + OH^0 (-751) -> OH^-1 (-1415)
+At time :  5.9417 ns Reaction : e_aq^-1 (-481) + OH^0 (-831) -> OH^-1 (-1416)
+At time :  6.3953 ns Reaction : OH^0 (-1005) + OH^0 (-1007) -> H2O2^0 (-1417)
+At time :  6.4557 ns Reaction : OH^0 (-761) + H^0 (-1370) -> No product
+At time :   6.846 ns Reaction : e_aq^-1 (-483) + H3O^1 (-926) -> H^0 (-1418)
+At time :  7.0939 ns Reaction : e_aq^-1 (-216) + OH^0 (-1047) -> OH^-1 (-1419)
+At time :  7.1039 ns Reaction : H3O^1 (-982) + OH^-1 (-1404) -> No product
+At time :  7.3539 ns Reaction : e_aq^-1 (-277) + H3O^1 (-678) -> H^0 (-1420)
+At time :  7.6543 ns Reaction : e_aq^-1 (-392) + OH^0 (-669) -> OH^-1 (-1421)
+At time :  8.2489 ns Reaction : H3O^1 (-774) + OH^-1 (-1401) -> No product
+At time :  8.2989 ns Reaction : e_aq^-1 (-224) + e_aq^-1 (-239) -> OH^-1 (-1422) + OH^-1 (-1423) + H_2^0 (-1424)
+At time :  8.6147 ns Reaction : e_aq^-1 (-291) + OH^0 (-1195) -> OH^-1 (-1425)
+At time :   8.735 ns Reaction : OH^-1 (-1378) + H3O^1 (-728) -> No product
+At time :   8.735 ns Reaction : e_aq^-1 (-455) + H3O^1 (-750) -> H^0 (-1426)
+At time :  9.3726 ns Reaction : OH^-1 (-1407) + H3O^1 (-946) -> No product
+At time :  9.5325 ns Reaction : OH^0 (-1258) + e_aq^-1 (-412) -> OH^-1 (-1427)
+At time :  9.5425 ns Reaction : H3O^1 (-1292) + e_aq^-1 (-158) -> H^0 (-1428)
+At time :  9.8112 ns Reaction : e_aq^-1 (-404) + H3O^1 (-1121) -> H^0 (-1429)
+At time :  10.806 ns Reaction : e_aq^-1 (-529) + OH^0 (-841) -> OH^-1 (-1430)
+At time :  10.906 ns Reaction : H^0 (-1192) + OH^0 (-1055) -> No product
+At time :  11.006 ns Reaction : OH^-1 (-1427) + H3O^1 (-1088) -> No product
+At time :  11.106 ns Reaction : OH^0 (-1260) + e_aq^-1 (-283) -> OH^-1 (-1431)
+At time :  11.106 ns Reaction : e_aq^-1 (-185) + H3O^1 (-784) -> H^0 (-1432)
+At time :  11.406 ns Reaction : H3O^1 (-962) + OH^-1 (-1411) -> No product
+At time :  12.106 ns Reaction : H^0 (-1221) + OH^0 (-1288) -> No product
+At time :  12.206 ns Reaction : e_aq^-1 (-197) + OH^0 (-801) -> OH^-1 (-1433)
+At time :  12.406 ns Reaction : H^0 (-1203) + H^0 (-1142) -> H_2^0 (-1434)
+At time :  12.406 ns Reaction : e_aq^-1 (-562) + OH^0 (-1075) -> OH^-1 (-1435)
+At time :  12.606 ns Reaction : H3O^1 (-840) + OH^-1 (-1430) -> No product
+At time :  12.694 ns Reaction : OH^-1 (-1414) + H3O^1 (-872) -> No product
+At time :   13.81 ns Reaction : H^0 (-1225) + e_aq^-1 (-594) -> OH^-1 (-1436) + H_2^0 (-1437)
+At time :   13.81 ns Reaction : H3O^1 (-970) + e_aq^-1 (-1092) -> H^0 (-1438)
+At time :   13.91 ns Reaction : OH^-1 (-1425) + H3O^1 (-1082) -> No product
+At time :   14.01 ns Reaction : e_aq^-1 (-523) + OH^0 (-697) -> OH^-1 (-1439)
+At time :   14.11 ns Reaction : e_aq^-1 (-273) + OH^0 (-981) -> OH^-1 (-1440)
+At time :   14.21 ns Reaction : H3O^1 (-712) + OH^-1 (-1423) -> No product
+At time :   14.41 ns Reaction : OH^-1 (-1439) + H3O^1 (-1118) -> No product
+At time :   16.21 ns Reaction : e_aq^-1 (-631) + e_aq^-1 (-628) -> OH^-1 (-1441) + OH^-1 (-1442) + H_2^0 (-1443)
+At time :   16.71 ns Reaction : H3O^1 (-1054) + e_aq^-1 (-1095) -> H^0 (-1444)
+At time :   17.11 ns Reaction : H3O^1 (-988) + OH^-1 (-1422) -> No product
+At time :   17.31 ns Reaction : OH^0 (-1025) + OH^0 (-1027) -> H2O2^0 (-1445)
+At time :   17.41 ns Reaction : e_aq^-1 (-471) + H3O^1 (-912) -> H^0 (-1446)
+At time :   17.51 ns Reaction : e_aq^-1 (-206) + H^0 (-1397) -> OH^-1 (-1447) + H_2^0 (-1448)
+At time :   18.41 ns Reaction : e_aq^-1 (-470) + OH^0 (-753) -> OH^-1 (-1449)
+At time :   18.51 ns Reaction : OH^0 (-715) + OH^0 (-993) -> H2O2^0 (-1450)
+At time :   20.41 ns Reaction : H^0 (-1261) + H^0 (-1444) -> H_2^0 (-1451)
+At time :   20.91 ns Reaction : e_aq^-1 (-155) + H2O2^0 (-1417) -> OH^-1 (-1452) + OH^0 (-1453)
+At time :   22.31 ns Reaction : OH^-1 (-1452) + H3O^1 (-802) -> No product
+At time :   22.31 ns Reaction : OH^0 (-823) + OH^0 (-1093) -> H2O2^0 (-1454)
+At time :   23.01 ns Reaction : H3O^1 (-1112) + e_aq^-1 (-1113) -> H^0 (-1455)
+At time :   23.31 ns Reaction : e_aq^-1 (-337) + e_aq^-1 (-350) -> OH^-1 (-1456) + OH^-1 (-1457) + H_2^0 (-1458)
+At time :   25.91 ns Reaction : H^0 (-1259) + e_aq^-1 (-431) -> OH^-1 (-1459) + H_2^0 (-1460)
+At time :   26.31 ns Reaction : H3O^1 (-1262) + OH^-1 (-1459) -> No product
+At time :   26.31 ns Reaction : e_aq^-1 (-429) + OH^0 (-679) -> OH^-1 (-1461)
+At time :   27.01 ns Reaction : e_aq^-1 (-129) + H^0 (-1313) -> OH^-1 (-1462) + H_2^0 (-1463)
+At time :   27.61 ns Reaction : e_aq^-1 (-127) + H3O^1 (-1022) -> H^0 (-1464)
+At time :   27.71 ns Reaction : H3O^1 (-914) + OH^-1 (-1449) -> No product
+At time :   27.71 ns Reaction : e_aq^-1 (-420) + OH^0 (-825) -> OH^-1 (-1465)
+At time :   28.81 ns Reaction : OH^0 (-799) + OH^0 (-1001) -> H2O2^0 (-1466)
+At time :   31.61 ns Reaction : e_aq^-1 (-421) + H3O^1 (-976) -> H^0 (-1467)
+At time :   32.51 ns Reaction : e_aq^-1 (-352) + e_aq^-1 (-399) -> OH^-1 (-1468) + OH^-1 (-1469) + H_2^0 (-1470)
+At time :   33.11 ns Reaction : e_aq^-1 (-432) + OH^0 (-671) -> OH^-1 (-1471)
+At time :   33.91 ns Reaction : e_aq^-1 (-443) + OH^0 (-1238) -> OH^-1 (-1472)
+At time :   34.31 ns Reaction : e_aq^-1 (-364) + H3O^1 (-1198) -> H^0 (-1473)
+At time :   34.41 ns Reaction : OH^-1 (-1462) + H3O^1 (-798) -> No product
+At time :  34.778 ns Reaction : H3O^1 (-758) + OH^-1 (-1431) -> No product
+At time :  36.378 ns Reaction : e_aq^-1 (-293) + H^0 (-1140) -> OH^-1 (-1474) + H_2^0 (-1475)
+At time :  38.878 ns Reaction : e_aq^-1 (-657) + H3O^1 (-860) -> H^0 (-1476)
+At time :  40.078 ns Reaction : H3O^1 (-760) + OH^-1 (-1474) -> No product
+At time :  42.078 ns Reaction : H3O^1 (-1100) + OH^-1 (-1441) -> No product
+At time :  42.178 ns Reaction : OH^-1 (-1472) + H3O^1 (-698) -> No product
+At time :  42.278 ns Reaction : e_aq^-1 (-397) + H3O^1 (-940) -> H^0 (-1477)
+At time :  43.878 ns Reaction : OH^0 (-1247) + e_aq^-1 (-434) -> OH^-1 (-1478)
+At time :  43.978 ns Reaction : e_aq^-1 (-254) + H3O^1 (-814) -> H^0 (-1479)
+At time :  44.578 ns Reaction : e_aq^-1 (-271) + H3O^1 (-1091) -> H^0 (-1480)
+At time :  46.878 ns Reaction : H3O^1 (-1189) + e_aq^-1 (-512) -> H^0 (-1481)
+At time :  52.678 ns Reaction : OH^-1 (-1478) + H3O^1 (-1056) -> No product
+At time :  52.678 ns Reaction : OH^-1 (-1415) + H3O^1 (-834) -> No product
+At time :  52.678 ns Reaction : e_aq^-1 (-243) + OH^0 (-805) -> OH^-1 (-1482)
+At time :  54.378 ns Reaction : OH^0 (-709) + OH^0 (-781) -> H2O2^0 (-1483)
+At time :  55.178 ns Reaction : OH^0 (-817) + e_aq^-1 (-1128) -> OH^-1 (-1484)
+At time :  56.978 ns Reaction : OH^-1 (-1410) + H3O^1 (-1046) -> No product
+At time :  58.178 ns Reaction : OH^0 (-1173) + e_aq^-1 (-1119) -> OH^-1 (-1485)
+At time :  61.652 ns Reaction : e_aq^-1 (-616) + H3O^1 (-876) -> H^0 (-1486)
+At time :  62.052 ns Reaction : e_aq^-1 (-524) + H3O^1 (-838) -> H^0 (-1487)
+At time :  62.657 ns Reaction : H3O^1 (-824) + OH^-1 (-1468) -> No product
+At time :  64.457 ns Reaction : H3O^1 (-1237) + e_aq^-1 (-472) -> H^0 (-1488)
+At time :  64.657 ns Reaction : e_aq^-1 (-166) + H3O^1 (-1044) -> H^0 (-1489)
+At time :  64.757 ns Reaction : H3O^1 (-1235) + e_aq^-1 (-527) -> H^0 (-1490)
+At time :   67.07 ns Reaction : e_aq^-1 (-325) + H3O^1 (-766) -> H^0 (-1491)
+At time :   67.77 ns Reaction : e_aq^-1 (-218) + OH^0 (-1051) -> OH^-1 (-1492)
+At time :  70.284 ns Reaction : e_aq^-1 (-253) + OH^0 (-1215) -> OH^-1 (-1493)
+At time :  74.375 ns Reaction : e_aq^-1 (-452) + e_aq^-1 (-504) -> OH^-1 (-1494) + OH^-1 (-1495) + H_2^0 (-1496)
+At time :  76.675 ns Reaction : OH^0 (-1199) + OH^0 (-755) -> H2O2^0 (-1497)
+At time :  78.175 ns Reaction : e_aq^-1 (-178) + OH^0 (-1033) -> OH^-1 (-1498)
+At time :  80.926 ns Reaction : OH^0 (-1306) + e_aq^-1 (-210) -> OH^-1 (-1499)
+At time :  81.226 ns Reaction : OH^0 (-1187) + e_aq^-1 (-509) -> OH^-1 (-1500)
+At time :  84.853 ns Reaction : e_aq^-1 (-292) + OH^0 (-937) -> OH^-1 (-1501)
+At time :  93.558 ns Reaction : e_aq^-1 (-411) + H3O^1 (-958) -> H^0 (-1502)
+At time :  97.314 ns Reaction : e_aq^-1 (-478) + OH^0 (-703) -> OH^-1 (-1503)
+At time :  107.21 ns Reaction : OH^0 (-1453) + e_aq^-1 (-195) -> OH^-1 (-1504)
+At time :  108.71 ns Reaction : e_aq^-1 (-145) + H3O^1 (-1030) -> H^0 (-1505)
+At time :  110.85 ns Reaction : OH^0 (-1168) + e_aq^-1 (-175) -> OH^-1 (-1506)
+At time :  111.35 ns Reaction : e_aq^-1 (-252) + OH^0 (-813) -> OH^-1 (-1507)
+At time :  113.35 ns Reaction : H^0 (-1480) + OH^0 (-979) -> No product
+At time :  114.85 ns Reaction : OH^0 (-717) + OH^0 (-1096) -> H2O2^0 (-1508)
+At time :  126.48 ns Reaction : OH^-1 (-1433) + H3O^1 (-714) -> No product
+At time :  132.93 ns Reaction : e_aq^-1 (-262) + e_aq^-1 (-1125) -> OH^-1 (-1509) + OH^-1 (-1510) + H_2^0 (-1511)
+At time :  135.23 ns Reaction : e_aq^-1 (-230) + OH^0 (-995) -> OH^-1 (-1512)
+At time :  136.93 ns Reaction : OH^-1 (-1510) + H3O^1 (-1050) -> No product
+At time :  143.52 ns Reaction : OH^-1 (-1504) + H3O^1 (-1024) -> No product
+At time :  157.81 ns Reaction : OH^-1 (-1442) + H3O^1 (-1085) -> No product
+At time :  171.31 ns Reaction : H2O2^0 (-1346) + e_aq^-1 (-1122) -> OH^-1 (-1513) + OH^0 (-1514)
+At time :  172.31 ns Reaction : H^0 (-1473) + OH^0 (-933) -> No product
+At time :   176.3 ns Reaction : OH^-1 (-1461) + H3O^1 (-952) -> No product
+At time :  185.21 ns Reaction : OH^-1 (-1501) + H3O^1 (-1097) -> No product
+At time :  187.03 ns Reaction : e_aq^-1 (-632) + OH^0 (-1099) -> OH^-1 (-1515)
+At time :  189.09 ns Reaction : OH^0 (-827) + OH^0 (-1059) -> H2O2^0 (-1516)
+At time :  197.98 ns Reaction : OH^-1 (-1471) + H3O^1 (-930) -> No product
+At time :  198.88 ns Reaction : OH^-1 (-1495) + H3O^1 (-922) -> No product
+At time :   209.8 ns Reaction : OH^-1 (-1513) + H3O^1 (-972) -> No product
+At time :  220.62 ns Reaction : H3O^1 (-682) + OH^-1 (-1506) -> No product
+At time :  249.45 ns Reaction : OH^-1 (-1509) + H3O^1 (-984) -> No product
+At time :  260.78 ns Reaction : e_aq^-1 (-587) + H2O2^0 (-1395) -> OH^-1 (-1517) + OH^0 (-1518)
+At time :  262.05 ns Reaction : H3O^1 (-818) + OH^-1 (-1493) -> No product
+At time :  267.08 ns Reaction : OH^0 (-1283) + e_aq^-1 (-259) -> OH^-1 (-1519)
+At time :  282.77 ns Reaction : H^0 (-1428) + OH^0 (-815) -> No product
+At time :  295.18 ns Reaction : OH^-1 (-1492) + H3O^1 (-938) -> No product
+At time :  300.92 ns Reaction : H^0 (-1278) + e_aq^-1 (-266) -> OH^-1 (-1520) + H_2^0 (-1521)
+At time :  325.22 ns Reaction : e_aq^-1 (-294) + H3O^1 (-780) -> H^0 (-1522)
+At time :  331.66 ns Reaction : e_aq^-1 (-265) + e_aq^-1 (-278) -> OH^-1 (-1523) + OH^-1 (-1524) + H_2^0 (-1525)
+At time :  353.56 ns Reaction : e_aq^-1 (-487) + H2O2^0 (-1380) -> OH^-1 (-1526) + OH^0 (-1527)
+At time :  354.45 ns Reaction : e_aq^-1 (-635) + H3O^1 (-856) -> H^0 (-1528)
+At time :  359.97 ns Reaction : e_aq^-1 (-148) + OH^0 (-1126) -> OH^-1 (-1529)
+At time :  375.58 ns Reaction : OH^-1 (-1421) + H3O^1 (-776) -> No product
+At time :  380.43 ns Reaction : H3O^1 (-986) + OH^-1 (-1519) -> No product
+At time :  395.03 ns Reaction : H3O^1 (-800) + OH^-1 (-1529) -> No product
+At time :  403.87 ns Reaction : e_aq^-1 (-646) + OH^0 (-857) -> OH^-1 (-1530)
+At time :  418.62 ns Reaction : e_aq^-1 (-234) + H3O^1 (-1016) -> H^0 (-1531)
+At time :  430.52 ns Reaction : e_aq^-1 (-112) + OH^0 (-939) -> OH^-1 (-1532)
+At time :  438.61 ns Reaction : OH^0 (-1312) + OH^0 (-1191) -> H2O2^0 (-1533)
+At time :  462.44 ns Reaction : e_aq^-1 (-200) + H3O^1 (-998) -> H^0 (-1534)
+At time :  533.76 ns Reaction : H3O^1 (-1214) + e_aq^-1 (-330) -> H^0 (-1535)
+At time :  564.19 ns Reaction : H3O^1 (-1279) + OH^-1 (-1456) -> No product
+At time :  705.39 ns Reaction : e_aq^-1 (-503) + OH^0 (-941) -> OH^-1 (-1536)
+At time :  786.14 ns Reaction : e_aq^-1 (-466) + OH^0 (-1160) -> OH^-1 (-1537)
+At time :  954.82 ns Reaction : H3O^1 (-1034) + OH^-1 (-1532) -> No product
+At time :  957.75 ns Reaction : OH^-1 (-1523) + H3O^1 (-994) -> No product
+*** G4Scheduler ends at time : 1 us
+___________________________________
+Graphics systems deleted.
+Visualization Manager deleting...
